@@ -1,0 +1,127 @@
+.nav-wrapper {
+  max-width: 1800px;
+  margin: auto;
+}
+
+.nav__list {
+  height: 65px;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list-el-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav__list-center {
+  width: 650px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__list-center-el-link {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.nav__list-el-link {
+  font-size: 20px;
+}
+
+.nav__list-el:last-child a {
+  padding: 8px 15px;
+
+  color: #7f68ad;
+
+  border: 2px solid #7f68ad;
+  border-radius: 20px;
+}
+
+#nav-short-but {
+  display: none;
+}
+
+.nav__list-el:last-child a:hover {
+  color: #ffffff;
+  background-color: #7f68ad;
+}
+
+.nav__list-center-el-link:hover {
+  color: #7f68ad;
+}
+
+.nav__list-el-logo:hover {
+  filter: brightness(85%);
+}
+
+/* pc - laptop - view */
+@media (max-width: 1200px) {
+  .nav__list {
+    justify-content: space-between;
+  }
+  .nav__list-center {
+    justify-content: start;
+    width: 425px;
+    margin-left: 10px;
+  }
+  .nav__list-center-el {
+    padding: 0px 10px;
+  }
+  .nav__list-center-el-link {
+    font-size: 16px;
+  }
+  .nav__list-el-logo {
+    width: 125px;
+    margin-right: 10px;
+  }
+  .nav__list-el:last-child a {
+    font-size: 16px;
+    padding: 6px 10px;
+    margin-left: 10px;
+  }
+}
+
+/* laptop - tablet - view */
+@media (max-width: 768px) {
+  .nav__list {
+    justify-content: center;
+    width: 100%;
+  }
+  .nav__list-el {
+    padding: 0px 25px;
+  }
+  .nav__list-center {
+    display: none;
+  }
+}
+
+/* tablet - mobile - view */
+@media (max-width: 425px) {
+  #nav-long-but {
+    display: none;
+  }
+  #nav-short-but {
+    display: inline-block;
+  }
+  .nav__list {
+    justify-content: space-evenly;
+  }
+  .nav__list-el {
+    padding: 0px 5px;
+  }
+  .nav__list-el-logo {
+    margin-right: 0px;
+    min-width: 125px;
+  }
+  .nav__list-el:last-child a {
+    margin-left: 0px;
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}
