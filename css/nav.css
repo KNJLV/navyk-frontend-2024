@@ -121,7 +121,7 @@
     display: inline-block;
   }
   .nav__list {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .nav__list-el {
     padding: 0px 5px;
@@ -134,5 +134,8 @@
     margin-left: 0px;
     font-size: 12px;
     padding: 5px 8px;
+  }
+  .nav__list {
+    height: 50px;
   }
 }

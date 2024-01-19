@@ -115,9 +115,6 @@
   .section-differences-wrapper {
     max-width: 600px;
   }
-  .section-differences-list-el-text {
-    font-size: 12px;
-  }
   .section-differences-list-el {
     height: 150px;
     max-width: 52%;
@@ -150,7 +147,7 @@
     padding: 0px 0px 30px 0px;
   }
   .section-differences-list-el-text {
-    font-size: 12px;
+    font-size: 2.35vw;
     padding: 15px 0px 0px 10px;
   }
   .section-differences-list-el:nth-child(1) p {
@@ -172,7 +169,7 @@
 
 @media (max-width: 425px) {
   .section-differences-wrapper {
-    max-width: 325px;
+    max-width: 90vw;
     margin: auto;
   }
   .section-differences-list-el {
@@ -180,7 +177,7 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    height: 75px;
+    height: 50px;
   }
   .section-differences-list-el:nth-child(1) {
     align-self: center;
@@ -193,27 +190,23 @@
   }
   .section-differences-list-el:nth-child(1) img {
     align-self: center;
-    max-width: 30%;
+    width: 90vw;
     padding: 0px;
     margin: 0px;
   }
   .section-differences-list-el:nth-child(2) img {
     align-self: center;
-    max-width: 30%;
+    width: 90vw;
     padding-right: 10px;
     margin: 0px;
   }
   .section-differences-list-el:nth-child(3) img {
     align-self: center;
-    max-width: 100%;
+    width: 90vw;
     padding: 0px;
     margin: 0px;
   }
 
-  .section-differences-list-el-text {
-    font-size: 12px;
-    padding: 0px;
-  }
   .block-shadow-and-stroke {
     box-shadow: none;
 
@@ -223,20 +216,20 @@
   .section-differences-list-el:nth-child(2) {
     flex-direction: row-reverse;
   }
-  .section-differences-list-el {
-    margin-top: 0px;
-  }
-}
-
-@media (max-width: 320px) {
-  .section-differences-wrapper {
-    max-width: 250px;
-    margin: auto;
-  }
-  .section-differences-list {
-    margin-top: 20px;
+  .section-differences-list-el-icon {
+    padding: 5px;
   }
   .section-differences-list-el-text {
-    font-size: 10px;
+    font-size: 4vw;
+    padding: 0px;
+    margin: 20px 10px 20px 10px;
+  }
+  .section-differences-list {
+    box-shadow: 0px 20px 0px 0px #dbd5e9;
+
+    border: 1px solid #dbd5e9;
+    border-radius: 20px;
+
+    padding: 10px;
   }
 }
