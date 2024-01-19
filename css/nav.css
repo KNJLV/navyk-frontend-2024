@@ -85,6 +85,10 @@
     padding: 6px 10px;
     margin-left: 10px;
   }
+  .nav-wrapper {
+    max-width: 1000px;
+    margin: auto;
+  }
 }
 
 /* laptop - tablet - view */
@@ -98,6 +102,13 @@
   }
   .nav__list-center {
     display: none;
+  }
+  .nav-wrapper {
+    max-width: 650px;
+    margin: auto;
+  }
+  .nav__list {
+    justify-content: space-between;
   }
 }
 
@@ -117,11 +128,11 @@
   }
   .nav__list-el-logo {
     margin-right: 0px;
-    min-width: 125px;
+    width: 100px;
   }
   .nav__list-el:last-child a {
     margin-left: 0px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 8px;
   }
 }
