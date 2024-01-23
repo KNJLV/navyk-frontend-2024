@@ -39,7 +39,8 @@
 }
 
 .section-subjects__list-el:hover {
-  filter: brightness(95%);
+  /* filter: brightness(95%); */
+  border: 6px solid #c5b7e1;
   cursor: pointer;
 }
 

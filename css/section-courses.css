@@ -26,7 +26,7 @@
 
 .section-courses__card {
   padding: 20px;
-  width: 718px;
+  max-width: 718px;
   height: 480px;
   border-radius: 30px;
   display: flex;
