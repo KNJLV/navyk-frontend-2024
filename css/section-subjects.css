@@ -48,6 +48,10 @@
   color: #7f68ad;
 }
 
+.section-subjects__list-el:hover > .section-subjects__list-el-icon {
+  transform: scale(0.85);
+}
+
 .section-subjects__list-el-icon {
   margin-top: auto;
 }
