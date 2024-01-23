@@ -21,16 +21,16 @@
   align-items: start;
 }
 
-.section-differences-list-el:nth-child(1) img {
+.section-differences-list-el:nth-child(3) img {
   max-width: 65%;
 }
 
-.section-differences-list-el:nth-child(2) img {
+.section-differences-list-el:nth-child(1) img {
   max-width: 60%;
   margin: 0px 20px 25px 0px;
 }
 
-.section-differences-list-el:nth-child(3) img {
+.section-differences-list-el:nth-child(2) img {
   max-width: 40%;
 }
 
@@ -38,15 +38,15 @@
   align-self: flex-end;
 }
 
-.section-differences-list-el:nth-child(1) p {
+.section-differences-list-el:nth-child(3) p {
   max-width: 425px;
 }
 
-.section-differences-list-el:nth-child(2) p {
+.section-differences-list-el:nth-child(1) p {
   max-width: 460px;
 }
 
-.section-differences-list-el:nth-child(3) p {
+.section-differences-list-el:nth-child(2) p {
   max-width: 350px;
 }
 
