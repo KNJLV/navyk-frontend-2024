@@ -1,0 +1,97 @@
+.section-teacher__title {
+  font-size: 80px;
+  font-weight: 500;
+  color: #e1dcec;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+  padding-top: 100px;
+}
+
+.section-teacher__wrapper {
+  max-width: 1522px;
+  height: 738px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 180px;
+}
+
+.section-teacher__card:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.section-teacher__card:nth-child(2n) > .section-teacher__card-block {
+  align-items: start;
+}
+
+.section-teacher__card {
+  max-width: 700px;
+  height: 325px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.section-teacher__card-photo {
+  width: 223px;
+  border-radius: 25px;
+  border: 1px solid #dfd9eb;
+
+  box-shadow: 0px 20px 0px 0px #dbd5e9;
+}
+.section-teacher__card-block {
+  width: 500px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+.section-teacher__card-block-description {
+  width: 446px;
+  height: 211px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 25px;
+  border: 1px solid #dfd9eb;
+  background: #fff;
+  box-shadow: 0px 20px 0px 0px #dbd5e9;
+}
+.section-teacher__card-block-name {
+  width: 446px;
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 25px;
+  border: 1px solid #dfd9eb;
+  background: #7f68ad;
+  box-shadow: 0px 20px 0px 0px #dbd5e9;
+}
+
+.section-teacher__card-block-name-text-1 {
+  font-size: 36px;
+  color: #fff;
+}
+.section-teacher__card-block-name-text-2 {
+  font-size: 28px;
+  color: #fff;
+}
+.section-teacher__card-block-description-list-el {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 5px 15px;
+}
+
+.section-teacher__card-block-description-list-el::before {
+  color: #7f68ad;
+  content: "◦";
+}
