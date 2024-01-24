@@ -9,7 +9,9 @@
 @import "./section-differences/section-differences-adaptive.css";
 @import "./section-subjects/section-subjects.css";
 @import "./section-subjects/section-subjects-adaptive.css";
-@import "./section-supervisor.css";
+@import "./section-supervisor/section-supervisor.css";
+@import "./section-supervisor/section-supervisor-adaptive.css";
 @import "./section-teachers.css";
-@import "./section-courses.css";
+@import "./section-courses/section-courses.css";
+@import "./section-courses/section-courses-adaptive.css";
 @import "./section-form.css";

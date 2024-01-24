@@ -1,3 +1,9 @@
+@media (min-width: 1920px) {
+  .nav-wrapper {
+    margin: auto;
+  }
+}
+
 @media (max-width: 1400px) {
   .nav__list-el-link {
     font-size: 18px;

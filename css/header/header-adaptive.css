@@ -1,3 +1,12 @@
+@media (min-width: 1920px) {
+  .header__wrapper {
+    margin: auto;
+  }
+  .header__wrapper-banner {
+    margin: auto;
+  }
+}
+
 @media (max-width: 1600px) {
   .header__conteiner-titles-list-el:nth-child(1) {
     font-size: 52px;

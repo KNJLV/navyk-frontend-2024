@@ -1,3 +1,9 @@
+@media (min-width: 1920px) {
+  .section-differences-wrapper {
+    margin: auto;
+  }
+}
+
 @media (max-width: 1600px) {
   .section-differences-list-el {
     width: 450px;
@@ -49,5 +55,6 @@
   }
   .section-differences-list {
     margin-top: 25px;
+    margin-bottom: 75px;
   }
 }
