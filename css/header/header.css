@@ -1,5 +1,6 @@
 .header__wrapper {
   max-width: 1620px;
+  /* max-width: 84.375%; */
   margin: auto;
   margin: 0px 150px;
 }
@@ -38,6 +39,7 @@
 }
 
 .header__wrapper-banner {
+  /* max-width: 93.75%; */
   max-width: 1800px;
   margin: auto;
   margin: 0px 60px;
