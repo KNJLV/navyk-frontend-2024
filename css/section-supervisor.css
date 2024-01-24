@@ -25,7 +25,7 @@
   align-items: center;
 
   border: 1px solid rgba(122, 188, 96, 0.5);
-  background: #fff;
+  background: #7abc60;
   box-shadow: 0px 20px 0px 0px rgba(122, 188, 96, 0.5);
 }
 .section-supervisor__icon-block {
@@ -78,13 +78,14 @@
 }
 
 .section-supervisor__name {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
-  color: #7abc60;
+  color: #ffffff;
 }
 
 .section-supervisor__surename {
   font-size: 28px;
+  color: #ffffff;
 }
 
 .section-supervisor__description-list {
