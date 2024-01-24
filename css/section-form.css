@@ -74,6 +74,28 @@
   align-items: center;
 }
 
+.section-form__block-left__slider input[type="radio"] {
+  display: none;
+}
+
+.section-form__block-left__slider input[type="radio"]:checked + label {
+  background: #7f68ad;
+  color: #ffffff;
+  border: 3px #7f68ad solid;
+}
+
+.section-form__block-left__slider label:hover {
+  border: 3px #7f68ad solid;
+  color: #7f68ad;
+  cursor: pointer;
+}
+
+.section-form__block-left__slider input[type="radio"]:disabled + label {
+  background: #ffffff;
+  color: #7f68ad;
+  border: 3px #7f68ad solid;
+}
+
 .section-form__block-left-inputs {
   width: 390px;
   height: 260px;
@@ -87,7 +109,8 @@
   font-size: 20px;
   font-weight: 500;
   border-bottom: 1px solid #939393;
-  padding: 10px 10px;
+  padding-top: 2px;
+  padding-bottom: 10px;
 }
 
 .section-form__block-left__info-line::placeholder {
@@ -95,6 +118,26 @@
   font-weight: 400;
   color: #939393;
   padding: 5px 10px;
+}
+
+.section-form__block-left__info-line:focus {
+  border-bottom: 1px solid #111111;
+}
+
+.section-form__block-left__info-line:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.section-form__block-left__info-line:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.section-form__block-left__info-line:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.section-form__block-left__info-line:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 .section-form__block-left__select {
@@ -114,11 +157,9 @@
   width: 390px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
-
-/*  */
 
 .checkbox {
   position: absolute;
@@ -162,7 +203,19 @@
 
 .section-form__block-left__accept-text {
   font-size: 20px;
+  font-weight: 500;
   width: 65%;
+  margin-left: 40px;
+}
+
+.section-form__block-left__accept-text a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #7f68ad;
+}
+
+.section-form__block-left__accept-text a:hover {
+  text-decoration: underline;
 }
 
 .section-form__block-left__button {
@@ -176,6 +229,11 @@
   justify-content: center;
   align-items: center;
   border-radius: 25px;
+}
+
+.section-form__block-left__button:hover {
+  filter: brightness(85%);
+  cursor: pointer;
 }
 
 .section-form__block-right {
