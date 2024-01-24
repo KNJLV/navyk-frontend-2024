@@ -1,6 +1,7 @@
 .section-differences-wrapper {
   max-width: 1620px;
   margin: auto;
+  margin: 0px 150px;
 }
 
 .section-differences-list {
@@ -21,35 +22,44 @@
   align-items: start;
 }
 
-.section-differences-list-el:nth-child(3) img {
-  max-width: 65%;
+.section-differences-list-el:nth-child(1) {
+  margin-right: 20px;
+}
+
+.section-differences-list-el:nth-child(3) {
+  margin-left: 20px;
 }
 
 .section-differences-list-el:nth-child(1) img {
   max-width: 60%;
-  margin: 0px 20px 25px 0px;
+  margin: 0px 20px 10px 0px;
 }
 
 .section-differences-list-el:nth-child(2) img {
   max-width: 40%;
 }
 
+.section-differences-list-el:nth-child(3) img {
+  max-width: 65%;
+}
+
 .section-differences-list-el-icon {
   align-self: flex-end;
 }
 
-.section-differences-list-el:nth-child(3) p {
-  max-width: 425px;
-}
-
 .section-differences-list-el:nth-child(1) p {
   max-width: 460px;
+  padding-right: 20px;
 }
 
 .section-differences-list-el:nth-child(2) p {
   max-width: 350px;
+  padding-right: 20px;
 }
-
+.section-differences-list-el:nth-child(3) p {
+  max-width: 425px;
+  padding-right: 20px;
+}
 .section-differences-list-el-text {
   font-size: 24px;
   padding: 25px 0px 0px 20px;

@@ -1,6 +1,7 @@
 .header__wrapper {
   max-width: 1620px;
   margin: auto;
+  margin: 0px 150px;
 }
 
 .header__conteiner-titles-list {
@@ -39,6 +40,7 @@
 .header__wrapper-banner {
   max-width: 1800px;
   margin: auto;
+  margin: 0px 60px;
 }
 
 .header__banner {

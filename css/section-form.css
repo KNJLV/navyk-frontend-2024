@@ -1,3 +1,7 @@
+.section-form {
+  display: none;
+}
+
 .section-form__title {
   font-size: 80px;
   font-weight: 500;

@@ -1,9 +1,12 @@
 @import "./reset.css";
 @import "./font.css";
 @import "./general.css";
-@import "./nav.css";
-@import "./header.css";
-@import "./section-differences.css";
+@import "./nav/nav.css";
+@import "./nav/nav-adaptive.css";
+@import "./header/header.css";
+@import "./header/header-adaptive.css";
+@import "./section-differences/section-differences.css";
+@import "./section-differences/section-differences-adaptive.css";
 @import "./section-subjects.css";
 @import "./section-supervisor.css";
 @import "./section-teachers.css";
