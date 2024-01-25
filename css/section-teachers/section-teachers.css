@@ -1,5 +1,5 @@
 .section-teacher {
-  display: none;
+  /* display: none; */
 }
 
 .section-teacher__title {
@@ -22,7 +22,7 @@
   align-items: center;
 }
 .section-teacher__card {
-  margin: auto;
+  /* margin: auto; */
   width: 1072px;
   height: 628px;
   display: flex;
@@ -95,7 +95,7 @@
 
 .section-teacher__left-card {
   opacity: 0.5;
-  width: 253px;
+  max-width: 253px;
   height: 488px;
   display: flex;
   flex-direction: column;

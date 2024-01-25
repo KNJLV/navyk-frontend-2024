@@ -11,7 +11,8 @@
 @import "./section-subjects/section-subjects-adaptive.css";
 @import "./section-supervisor/section-supervisor.css";
 @import "./section-supervisor/section-supervisor-adaptive.css";
-@import "./section-teachers.css";
+@import "./section-teachers/section-teachers.css";
+@import "./section-teachers/section-teachers-adaptive.css";
 @import "./section-courses/section-courses.css";
 @import "./section-courses/section-courses-adaptive.css";
 @import "./section-form.css";
