@@ -1,19 +1,39 @@
 @import "./reset.css";
 @import "./font.css";
 @import "./general.css";
+
+/* nav */
 @import "./nav/nav.css";
 @import "./nav/nav-adaptive.css";
+
+/* header */
 @import "./header/header.css";
 @import "./header/header-adaptive.css";
+
+/* section-differences */
 @import "./section-differences/section-differences.css";
 @import "./section-differences/section-differences-adaptive.css";
+
+/* section-subjects */
 @import "./section-subjects/section-subjects.css";
 @import "./section-subjects/section-subjects-adaptive.css";
+
+/* section-supervisor */
 @import "./section-supervisor/section-supervisor.css";
 @import "./section-supervisor/section-supervisor-adaptive.css";
+
+/* section-teachers */
 @import "./section-teachers/section-teachers.css";
 @import "./section-teachers/section-teachers-adaptive.css";
+
+/* section-courses */
 @import "./section-courses/section-courses.css";
 @import "./section-courses/section-courses-adaptive.css";
+
+/* section-form */
 @import "./section-form/section-form.css";
 @import "./section-form/section-form-adaptive.css";
+
+/* footer */
+@import "./footer/footer.css";
+@import "./footer/footer-adaptive.css";
