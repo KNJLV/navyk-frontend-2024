@@ -1,0 +1,88 @@
+@media (max-width: 1600px) {
+  .section-form__wrapper {
+    margin: 0px 160px;
+  }
+  .section-form__block-left-parent-button {
+    font-size: 20px;
+  }
+  .section-form__block-left-student-button {
+    font-size: 20px;
+  }
+  .section-form__block-left__button {
+    font-size: 20px;
+  }
+  .section-form__block-left__info-line {
+    padding-bottom: 5px;
+  }
+  .section-form__block-left__accept-text {
+    font-size: 18px;
+    width: 80%;
+    margin-left: 25px;
+  }
+  .section-form__block {
+    height: 625px;
+  }
+  .section-form__block-right-navyk-logo {
+    width: 85%;
+  }
+  .section-form__block-right-answer-text {
+    width: 85%;
+  }
+  .section-form__block-right-phone-gay {
+    width: 85%;
+  }
+  .section-form__title {
+    font-size: 70px;
+    margin-bottom: 25px;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .section-form__wrapper {
+    margin: 0px 75px;
+  }
+  .section-form__block {
+    height: 575px;
+  }
+  .section-form__block-left {
+    height: 500px;
+    width: 350px;
+  }
+  .section-form__block-right {
+    height: 500px;
+    width: 450px;
+  }
+  .section-form__block-right-navyk-logo {
+    width: 95%;
+  }
+  .section-form__block-right-answer-text {
+    width: 95%;
+  }
+  .section-form__block-right-phone-gay {
+    width: 95%;
+  }
+  .section-form__block-left-student-button {
+    width: 160px;
+  }
+  .section-form__block-left-parent-button {
+    width: 160px;
+  }
+  .section-form__block-left__slider {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .section-form__block-right {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .section-form__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding-top: 65px;
+  }
+}

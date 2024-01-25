@@ -15,4 +15,5 @@
 @import "./section-teachers/section-teachers-adaptive.css";
 @import "./section-courses/section-courses.css";
 @import "./section-courses/section-courses-adaptive.css";
-@import "./section-form.css";
+@import "./section-form/section-form.css";
+@import "./section-form/section-form-adaptive.css";
