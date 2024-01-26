@@ -18,6 +18,7 @@
 .nav__list-el-logo {
   display: inline-block;
   vertical-align: middle;
+  width: 225px;
 }
 .nav__list-center {
   width: 650px;

@@ -37,3 +37,6 @@
 /* footer */
 @import "./footer/footer.css";
 @import "./footer/footer-adaptive.css";
+
+/* mobile-adaptive */
+@import "./mobile-adaptive.css";

@@ -33,15 +33,16 @@
 
 .section-differences-list-el:nth-child(1) img {
   max-width: 60%;
-  margin: 0px 20px 10px 0px;
+  margin: 0px 20px 20px 0px;
 }
 
 .section-differences-list-el:nth-child(2) img {
-  max-width: 40%;
+  max-width: 35%;
 }
 
 .section-differences-list-el:nth-child(3) img {
-  max-width: 65%;
+  max-width: 40%;
+  margin: 0px 10px 10px 0px;
 }
 
 .section-differences-list-el-icon {

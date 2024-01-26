@@ -15,7 +15,7 @@
     width: 500px;
   }
   .nav__list-el-logo {
-    width: 85%;
+    width: 200px;
   }
 }
 
@@ -30,7 +30,7 @@
     width: 450px;
   }
   .nav__list-el-logo {
-    width: 80%;
+    width: 175px;
   }
 }
 
@@ -45,7 +45,7 @@
     width: 400px;
   }
   .nav__list-el-logo {
-    width: 80%;
+    width: 150px;
   }
   .nav__list {
     height: 60px;

@@ -21,9 +21,7 @@
   .section-supervisor__surename {
     font-size: 26px;
   }
-  .section-supervisor__icon {
-    width: 90%;
-  }
+
   .section-supervisor__wrapper {
     margin: 0px 150px;
   }
@@ -45,7 +43,7 @@
     min-height: 100px;
   }
   .section-supervisor__icon {
-    width: 80%;
+    width: 70%;
   }
   .section-supervisor__wrapper {
     margin: 0px 100px;
