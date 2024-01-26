@@ -71,6 +71,11 @@
   padding: 20px 20px;
 }
 
+.section-teacher__card-description-list-el::before {
+  color: #7f68ad;
+  content: "◦";
+}
+
 .section-teacher__card-photo {
   max-width: 100%;
 

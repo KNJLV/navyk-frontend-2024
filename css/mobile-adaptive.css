@@ -164,6 +164,7 @@
   .section-supervisor__title {
     margin-bottom: 5vw;
     font-size: 10vw;
+    padding-top: 5vw;
     text-align: center;
   }
   .section-supervisor {
@@ -253,7 +254,7 @@
     margin-top: 5vw;
     max-width: 100%;
     width: 125vw;
-    height: 25vw;
+    height: 22vw;
     border-radius: 6vw;
   }
   .section-teacher__card-name-text-1 {
