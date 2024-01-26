@@ -85,4 +85,55 @@
     margin-bottom: 20px;
     padding-top: 65px;
   }
+  .section-form__block-left-student-button {
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .section-form__block-left-parent-button {
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .section-form__block-left__accept-text {
+    font-size: 16px;
+    width: 65%;
+    margin-left: 26px;
+  }
+  .section-form__block-left__info-line::placeholder {
+    font-size: 16px;
+    padding: 3px 6px;
+  }
+  .section-form__block-left__info-line {
+    font-size: 16px;
+  }
+  .section-form__block-left__select {
+    font-size: 16px;
+  }
+
+  .section-form__block-left__select > option {
+    font-size: 16px;
+  }
+  .section-form__block-left__accept-text a {
+    font-size: 16px;
+  }
+  .section-form__block-left__button {
+    font-size: 20px;
+    width: 225px;
+    height: 55px;
+  }
+  .section-form__block-left {
+    height: 475px;
+    width: 325px;
+  }
+  .section-form__block-right {
+    height: 475px;
+    width: 375px;
+  }
+  .section-form__block {
+    height: 525px;
+  }
+  .section-form__block-left__slider {
+    width: 325px;
+  }
 }

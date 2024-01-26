@@ -1,15 +1,15 @@
 .footer {
   /* display: none; */
-  width: 100%;
+  max-width: 100%;
   height: 730px;
   background-color: #151515;
   background-image: url(../../assets/footer/puzzle-texture.svg);
   background-repeat: repeat-y;
 }
-.footer-wrapper{
-  padding-top: 75px;
+.footer-wrapper {
+  padding-top: 100px;
   max-width: 1600px;
-  height: 100%;
+  height: 80%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -17,42 +17,42 @@
   justify-content: space-between;
   align-items: center;
 }
-.footer__block{
+.footer__block {
   width: 450px;
-  height: 240px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
 }
-.footer-block-title{
+.footer-block-title {
   color: #ffffff;
   font-size: 24px;
   margin-bottom: 20px;
 }
-.footer__block-list-el{
+.footer__block-list-el {
   color: #8d8d8d;
   font-size: 20px;
   font-weight: 500;
   padding-bottom: 8px;
 }
-.footer__block-list-el-link{
+.footer__block-list-el-link {
   color: #afafaf;
   font-size: 20px;
   font-weight: 500;
 }
-.footer__block-list-el-link:hover{
+.footer__block-list-el-link:hover {
   color: #ffffff;
   cursor: pointer;
 }
-.footer__block-logo{
+.footer__block-logo {
   filter: saturate(0%);
   width: 100%;
 }
-.footer-block-prosvet-logo{
+.footer-block-prosvet-logo {
   width: 30%;
 }
-.footer-block__link{
+.footer-block__link {
   width: 100%;
   height: 100%;
   display: flex;

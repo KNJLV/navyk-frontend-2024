@@ -16,6 +16,7 @@
 
 .section-courses__wrapper {
   max-width: 1506px;
+  min-height: 25%;
   margin: auto;
   display: flex;
   flex-direction: row;

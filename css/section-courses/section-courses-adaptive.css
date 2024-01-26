@@ -82,8 +82,8 @@
     font-size: 60px;
   }
   .section-courses__card {
-    max-width: 450px;
-    min-height: 450px;
+    max-width: 475px;
+    min-height: 480px;
   }
   .section-courses__card-header-left-title {
     font-size: 38px;
@@ -107,12 +107,26 @@
     font-size: 14px;
   }
   .section-courses__card-description {
-    font-size: 18px;
+    font-size: 16px;
   }
   .section-courses__card-button-1 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .section-courses__card-button-2 {
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section-courses__wrapper {
+    justify-content: space-evenly;
+    margin: 0px 0px;
+  }
+  .section-courses__card {
+    max-width: 425px;
+    min-height: 480px;
+  }
+  .section-courses__card-button-block {
+    justify-content: space-between;
   }
 }
