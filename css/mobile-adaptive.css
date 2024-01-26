@@ -348,5 +348,114 @@
     border-radius: 7.5vw;
     border: 0.5vw solid rgba(122, 188, 96, 0.25);
   }
+  .section-courses__title {
+    margin-bottom: 5vw;
+    padding-top: 8vw;
+    font-size: 11vw;
+    text-align: center;
+  }
   /* section-courses - end*/
+
+  /* section-form - start*/
+  .section-form__block-right {
+    display: none;
+  }
+  .section-form__wrapper {
+    max-width: 100%;
+    width: 90vw;
+    margin: auto;
+  }
+  .section-form__block {
+    width: 90vw;
+    height: 140vw;
+    margin-bottom: 20vw;
+    border-radius: 10vw;
+    border: 0.25vw solid rgba(127, 104, 173, 0.25);
+  }
+  .section-form__block-left {
+    width: 90%;
+    height: 90%;
+  }
+  .section-form__block-left-parent-button {
+    font-size: 5vw;
+    border: 0.5vw solid #7f68ad;
+    border-radius: 5vw;
+    width: 37vw;
+    height: 10vw;
+  }
+  .section-form__block-left-student-button {
+    font-size: 5vw;
+    border: 0.5vw solid #7f68ad;
+    border-radius: 5vw;
+    width: 37vw;
+    height: 10vw;
+  }
+  .section-form__block-left__slider {
+    max-width: 100%;
+    width: 100vw;
+  }
+  .section-form__block-left-inputs {
+    height: 50%;
+  }
+  .section-form__block-left__info-line {
+    font-size: 4.5vw;
+    padding: 1vw 2vw;
+  }
+  .section-form__block-left__info-line::placeholder {
+    font-size: 4.5vw;
+    padding: 1vw 2vw;
+  }
+  .section-form__block-left__select {
+    font-size: 4.5vw;
+    padding: 2vw 4.25vw;
+  }
+  .section-form__block-left__select > option {
+    font-size: 2.5vw;
+    padding: 1vw 2vw;
+  }
+  .section-form__block-left__accept {
+    max-width: 100%;
+    width: 90vw;
+  }
+  .checkbox-view {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 2vw;
+    border: 0.5vw solid #ccc;
+    margin-right: 1vw;
+  }
+
+  .checkbox-label {
+    font-size: 8vw;
+  }
+
+  .checkbox-icon {
+    width: 5vw;
+  }
+  .section-form__block-left__accept-text {
+    font-size: 4.5vw;
+    width: 80%;
+    margin-left: 40px;
+  }
+  .section-form__block-left__accept-text a {
+    font-size: 4.5vw;
+    text-transform: uppercase;
+  }
+  .section-form__block-left__button {
+    font-size: 6vw;
+    width: 60vw;
+    height: 15vw;
+    border-radius: 6vw;
+  }
+  .section-form__title {
+    margin-bottom: 5vw;
+    padding-top: 8vw;
+    font-size: 10vw;
+    text-align: center;
+  }
+  /* section-form - end*/
+
+  /* footer - start*/
+
+  /* footer - end*/
 }
