@@ -4,7 +4,7 @@
   height: 730px;
   background-color: #151515;
   background-image: url(../../assets/footer/puzzle-texture.svg);
-  background-repeat: repeat-y;
+  background-repeat: repeat-y repeat-x;
 }
 .footer-wrapper {
   padding-top: 100px;
