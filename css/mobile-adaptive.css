@@ -183,6 +183,7 @@
   }
   .section-supervisor__name-block {
     max-width: 100vw;
+    width: 90vw;
     min-height: 22.5vw;
     border-radius: 7.5vw;
   }
@@ -195,6 +196,7 @@
   }
   .section-supervisor__icon-block {
     max-width: 100vw;
+    width: 90vw;
     min-height: 15vw;
     border-radius: 5vw;
     flex-direction: row;
