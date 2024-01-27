@@ -456,6 +456,38 @@
   /* section-form - end*/
 
   /* footer - start*/
-
+  .footer-wrapper {
+    flex-direction: column;
+    max-width: 90vw;
+    flex-wrap: nowrap;
+  }
+  .footer {
+    /* display: none; */
+    max-width: 100%;
+    height: 100%;
+  }
+  .footer__block {
+    width: 100%;
+    height: 50vw;
+  }
+  .footer-block-title {
+    font-size: 7vw;
+    margin-bottom: 5vw;
+  }
+  .footer__block:nth-child(2) {
+    order: -1;
+    width: 75vw;
+  }
+    .footer__block:nth-child(3) {
+    order: -1;
+  }
+  .footer__block-list-el {
+    font-size: 4vw;
+    font-weight: 500;
+    padding-bottom: 5vw;
+  }
+  .footer__block-list-el-link {
+    font-size: 4vw;
+  }
   /* footer - end*/
 }
