@@ -6,7 +6,7 @@
 
   transition: 0.1s ease-in-out;
   scroll-behavior: smooth;
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 }
 
 .block-shadow-and-stroke {
