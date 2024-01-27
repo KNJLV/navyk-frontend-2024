@@ -478,7 +478,7 @@
     order: -1;
     width: 75vw;
   }
-    .footer__block:nth-child(3) {
+  .footer__block:nth-child(3) {
     order: -1;
   }
   .footer__block-list-el {
