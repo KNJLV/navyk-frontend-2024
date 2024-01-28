@@ -383,6 +383,10 @@
     font-size: 11vw;
     text-align: center;
   }
+  .section-courses__card-header-right-logo {
+    width: 50vw;
+  }
+
   /* section-courses - end*/
 
   /* section-form - start*/
