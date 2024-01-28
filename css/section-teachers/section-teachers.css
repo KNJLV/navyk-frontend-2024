@@ -1,3 +1,9 @@
+.section-teacher__arrow-right-icon {
+  display: none;
+}
+.section-teacher__arrow-left-icon {
+  display: none;
+}
 .section-teacher__title {
   font-size: 80px;
   font-weight: 500;

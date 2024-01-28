@@ -235,6 +235,23 @@
   /* section-supervisor - end*/
 
   /* section-teachers - start*/
+  .section-teacher__card-left-photo-and-arrows {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-teacher__arrow-left-icon {
+    display: inline-block;
+    opacity: 0.15;
+    width: 7.25vw;
+  }
+  .section-teacher__arrow-right-icon {
+    display: inline-block;
+    opacity: 0.15;
+    width: 7.25vw;
+  }
   .section-teacher__wrapper {
     max-width: 90vw;
     height: 200vw;
