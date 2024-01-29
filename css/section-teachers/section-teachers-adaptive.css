@@ -36,7 +36,6 @@
     height: 500px;
     margin-left: 10px;
   }
-  /*  */
   .section-teacher__left-card {
     /* transform: scale(0.75); */
     max-width: 200px;
@@ -52,7 +51,6 @@
   .section-teacher__left-card-name-text-2 {
     font-size: 14px;
   }
-  /*  */
   .section-teacher__right-card {
     /* transform: scale(0.75); */
     max-width: 200px;
@@ -110,7 +108,6 @@
   .section-teacher__card-name-text-2 {
     font-size: 18px;
   }
-  /*  */
   .section-teacher__left-card {
     /* transform: scale(0.75); */
     max-width: 175px;
@@ -126,7 +123,6 @@
   .section-teacher__left-card-name-text-2 {
     font-size: 14px;
   }
-  /*  */
   .section-teacher__right-card {
     /* transform: scale(0.75); */
     max-width: 175px;
@@ -167,18 +163,14 @@
     font-size: 18px;
     padding: 10px 10px;
   }
-  /*  */
   .section-teacher__card-left {
     max-width: 200px;
     height: 400px;
   }
-
-  /*  */
   .section-teacher__card-name {
     max-width: 200px;
     height: 90px;
   }
-  /*  */
   .section-teacher__left-card {
     max-width: 150px;
     height: 300px;
@@ -193,7 +185,6 @@
   .section-teacher__left-card-name-text-2 {
     font-size: 10px;
   }
-  /*  */
   .section-teacher__right-card {
     max-width: 150px;
     height: 300px;
