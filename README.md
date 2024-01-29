@@ -6,8 +6,6 @@ ___
 
 *https://waydehueydeee.github.io/navyk-frontend-2024/*
 
-___
-
 ## Link to BACKEND Repository :
 
 *https://waydehueydeee.github.io/navyk-backend-2024/*
