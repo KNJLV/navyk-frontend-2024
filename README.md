@@ -2,10 +2,10 @@
 
 ___
 
-## Link to GitHub Pages:
+### Link to GitHub Pages:
 
 *https://waydehueydeee.github.io/navyk-frontend-2024/*
 
-## Link to BACKEND Repository :
+### Link to BACKEND Repository :
 
 *https://waydehueydeee.github.io/navyk-backend-2024/*
