@@ -1,12 +1,12 @@
 # navyk-webpage-2024 (new design)
 
----
+___
 
 ## Link to GitHub Pages:
 
 *https://waydehueydeee.github.io/navyk-frontend-2024/*
 
----
+___
 
 ## Link to BACKEND Repository :
 
