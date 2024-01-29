@@ -99,7 +99,7 @@
   color: #ffffff;
   font-size: 24px;
 }
-
+/*  */
 .section-teacher__left-card {
   opacity: 0.5;
   max-width: 253px;
@@ -145,6 +145,56 @@
 }
 
 .section-teacher__left-card-name-text-2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+/*  */
+.section-teacher__right-card {
+  opacity: 0.5;
+  max-width: 253px;
+  height: 488px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-teacher__right-card:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.section-teacher__right-card-photo {
+  max-width: 100%;
+
+  border-radius: 25px;
+  border: 1px solid rgba(175, 157, 212, 0.5);
+  box-shadow: 0px 20px 0px 0px #dbd5e9;
+}
+.section-teacher__right-card-name {
+  width: 253px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #af9dd4;
+
+  background: #7f68ae;
+
+  box-shadow: 0px 20px 0px 0px #dbd5e9;
+}
+.section-teacher__right-card-name-text-1 {
+  color: #fff;
+
+  font-size: 28px;
+
+  font-weight: 700;
+}
+
+.section-teacher__right-card-name-text-2 {
   color: #fff;
   font-size: 18px;
   font-weight: 500;

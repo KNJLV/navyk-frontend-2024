@@ -263,6 +263,9 @@
   .section-teacher__left-card {
     display: none;
   }
+  .section-teacher__right-card {
+    display: none;
+  }
   .section-teacher__card {
     flex-direction: column;
     justify-content: center;

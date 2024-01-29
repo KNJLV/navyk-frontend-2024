@@ -1,82 +1,82 @@
 // Валидация номера телефона в форме НАЧАЛО
 
 document.addEventListener("DOMContentLoaded", function () {
-    var phoneInputs = document.querySelectorAll("input[data-tel-input]");
-  
-    var getInputNumbersValue = function (input) {
-      // Return stripped input value — just numbers
-      return input.value.replace(/\D/g, "");
-    };
-  
-    var onPhonePaste = function (e) {
-      var input = e.target,
-        inputNumbersValue = getInputNumbersValue(input);
-      var pasted = e.clipboardData || window.clipboardData;
-      if (pasted) {
-        var pastedText = pasted.getData("Text");
-        if (/\D/g.test(pastedText)) {
-          // Attempt to paste non-numeric symbol — remove all non-numeric symbols,
-          // formatting will be in onPhoneInput handler
-          input.value = inputNumbersValue;
-          return;
-        }
-      }
-    };
-  
-    var onPhoneInput = function (e) {
-      var input = e.target,
-        inputNumbersValue = getInputNumbersValue(input),
-        selectionStart = input.selectionStart,
-        formattedInputValue = "";
-  
-      if (!inputNumbersValue) {
-        return (input.value = "");
-      }
-  
-      if (input.value.length != selectionStart) {
-        // Editing in the middle of input, not last symbol
-        if (e.data && /\D/g.test(e.data)) {
-          // Attempt to input non-numeric symbol
-          input.value = inputNumbersValue;
-        }
+  var phoneInputs = document.querySelectorAll("input[data-tel-input]");
+
+  var getInputNumbersValue = function (input) {
+    // Return stripped input value — just numbers
+    return input.value.replace(/\D/g, "");
+  };
+
+  var onPhonePaste = function (e) {
+    var input = e.target,
+      inputNumbersValue = getInputNumbersValue(input);
+    var pasted = e.clipboardData || window.clipboardData;
+    if (pasted) {
+      var pastedText = pasted.getData("Text");
+      if (/\D/g.test(pastedText)) {
+        // Attempt to paste non-numeric symbol — remove all non-numeric symbols,
+        // formatting will be in onPhoneInput handler
+        input.value = inputNumbersValue;
         return;
       }
-  
-      if (["7", "8", "9"].indexOf(inputNumbersValue[0]) > -1) {
-        if (inputNumbersValue[0] == "9")
-          inputNumbersValue = "7" + inputNumbersValue;
-        var firstSymbols = inputNumbersValue[0] == "8" ? "8" : "+7";
-        formattedInputValue = input.value = firstSymbols + " ";
-        if (inputNumbersValue.length > 1) {
-          formattedInputValue += "(" + inputNumbersValue.substring(1, 4);
-        }
-        if (inputNumbersValue.length >= 5) {
-          formattedInputValue += ") " + inputNumbersValue.substring(4, 7);
-        }
-        if (inputNumbersValue.length >= 8) {
-          formattedInputValue += "-" + inputNumbersValue.substring(7, 9);
-        }
-        if (inputNumbersValue.length >= 10) {
-          formattedInputValue += "-" + inputNumbersValue.substring(9, 11);
-        }
-      } else {
-        formattedInputValue = "+" + inputNumbersValue.substring(0, 16);
-      }
-      input.value = formattedInputValue;
-    };
-    var onPhoneKeyDown = function (e) {
-      // Clear input after remove last symbol
-      var inputValue = e.target.value.replace(/\D/g, "");
-      if (e.keyCode == 8 && inputValue.length == 1) {
-        e.target.value = "";
-      }
-    };
-    for (var phoneInput of phoneInputs) {
-      phoneInput.addEventListener("keydown", onPhoneKeyDown);
-      phoneInput.addEventListener("input", onPhoneInput, false);
-      phoneInput.addEventListener("paste", onPhonePaste, false);
     }
-  });
+  };
+
+  var onPhoneInput = function (e) {
+    var input = e.target,
+      inputNumbersValue = getInputNumbersValue(input),
+      selectionStart = input.selectionStart,
+      formattedInputValue = "";
+
+    if (!inputNumbersValue) {
+      return (input.value = "");
+    }
+
+    if (input.value.length != selectionStart) {
+      // Editing in the middle of input, not last symbol
+      if (e.data && /\D/g.test(e.data)) {
+        // Attempt to input non-numeric symbol
+        input.value = inputNumbersValue;
+      }
+      return;
+    }
+
+    if (["7", "8", "9"].indexOf(inputNumbersValue[0]) > -1) {
+      if (inputNumbersValue[0] == "9")
+        inputNumbersValue = "7" + inputNumbersValue;
+      var firstSymbols = inputNumbersValue[0] == "8" ? "8" : "+7";
+      formattedInputValue = input.value = firstSymbols + " ";
+      if (inputNumbersValue.length > 1) {
+        formattedInputValue += "(" + inputNumbersValue.substring(1, 4);
+      }
+      if (inputNumbersValue.length >= 5) {
+        formattedInputValue += ") " + inputNumbersValue.substring(4, 7);
+      }
+      if (inputNumbersValue.length >= 8) {
+        formattedInputValue += "-" + inputNumbersValue.substring(7, 9);
+      }
+      if (inputNumbersValue.length >= 10) {
+        formattedInputValue += "-" + inputNumbersValue.substring(9, 11);
+      }
+    } else {
+      formattedInputValue = "+" + inputNumbersValue.substring(0, 16);
+    }
+    input.value = formattedInputValue;
+  };
+  var onPhoneKeyDown = function (e) {
+    // Clear input after remove last symbol
+    var inputValue = e.target.value.replace(/\D/g, "");
+    if (e.keyCode == 8 && inputValue.length == 1) {
+      e.target.value = "";
+    }
+  };
+  for (var phoneInput of phoneInputs) {
+    phoneInput.addEventListener("keydown", onPhoneKeyDown);
+    phoneInput.addEventListener("input", onPhoneInput, false);
+    phoneInput.addEventListener("paste", onPhonePaste, false);
+  }
+});
 
 // Валидация номера телефона в форме КОНЕЦ
 
@@ -92,13 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
   studentPhoneNumber.style.display = "none";
 });
 
-
 // Переключение формы родитель/ученик НАЧАЛО
 // переключение по кнопке РОДИТЕЛЬ
 parentButton.addEventListener("change", () => {
-    let inputsBlock = document.querySelector(".section-form__block-left-inputs");
-    console.log(inputsBlock)
-    if (this.checked) {
+  let inputsBlock = document.querySelector(".section-form__block-left-inputs");
+  console.log(inputsBlock);
+  if (this.checked) {
     studentName.style.display = "inline";
     studentPhoneNumber.style.display = "inline";
     inputsBlock.style.height = "62%";
@@ -111,9 +110,9 @@ parentButton.addEventListener("change", () => {
 
 // переключение по кнопке УЧЕНИК
 studentButton.addEventListener("change", () => {
-    let inputsBlock = document.querySelector(".section-form__block-left-inputs");
-    console.log(inputsBlock)
-    if (this.checked) {
+  let inputsBlock = document.querySelector(".section-form__block-left-inputs");
+  console.log(inputsBlock);
+  if (this.checked) {
     studentName.style.display = "none";
     studentPhoneNumber.style.display = "none";
     inputsBlock.style.height = "45%";
@@ -134,7 +133,9 @@ const parentEmail = document.querySelector("#parentEmail");
 
 // функция отправки данных из формы в бота
 function SendFormInfo() {
-  let klientInformation = document.querySelectorAll(".section-form__block-left__info-line");
+  let klientInformation = document.querySelectorAll(
+    ".section-form__block-left__info-line"
+  );
   let klientClass = document.querySelector(".section-form__block-left__select");
   let order = JSON.stringify({
     parent_name: klientInformation[0].value,
@@ -142,7 +143,7 @@ function SendFormInfo() {
     student_name: klientInformation[2].value,
     student_number: klientInformation[3].value,
     student_comment: klientInformation[4].value,
-    student_class: klientClass.value
+    student_class: klientClass.value,
   });
   fetch("/api/callback", {
     method: "POST",
@@ -161,7 +162,7 @@ function SendFormInfo() {
   alert("Заявка успешно отправлена!");
 }
 
-// Отправка формы НАЧАЛО 
+// Отправка формы НАЧАЛО
 buttons.addEventListener("click", (e) => {
   e.preventDefault();
   // проверка полей при заполнение РОДИТЕЛЕМ
@@ -170,15 +171,15 @@ buttons.addEventListener("click", (e) => {
       // проверка чекбокса и полей родителя (когда всё заполнено)
       chekedPersonalData.checked &&
       parentName.value != "" &&
-      parentPhoneNumber.value != "" 
-    //   && parentEmail.value != ""
+      parentPhoneNumber.value != ""
+      //   && parentEmail.value != ""
     ) {
       SendFormInfo();
     } else if (
       // проверка полей родителя (когда не заполнены поля)
       parentName.value == "" ||
-      parentPhoneNumber.value == "" 
-    // || parentEmail.value == ""
+      parentPhoneNumber.value == ""
+      // || parentEmail.value == ""
     ) {
       alert("Заполнены не все обязательные поля");
     } else if (!chekedPersonalData.checked) {
@@ -193,7 +194,7 @@ buttons.addEventListener("click", (e) => {
       chekedPersonalData.checked &&
       parentName.value != "" &&
       parentPhoneNumber.value != "" &&
-    //   && parentEmail.value != "" 
+      //   && parentEmail.value != ""
       studentName.value != "" &&
       studentPhoneNumber.value != ""
     ) {
@@ -202,7 +203,7 @@ buttons.addEventListener("click", (e) => {
       // проверка полей родителя (когда не заполнены поля)
       parentName.value == "" ||
       parentPhoneNumber.value == "" ||
-    //   parentEmail.value == "" ||
+      //   parentEmail.value == "" ||
       studentName.value == "" ||
       studentPhoneNumber.value == ""
     ) {
@@ -214,3 +215,58 @@ buttons.addEventListener("click", (e) => {
   }
 });
 // Отправка формы КОНЕЦ
+
+// let teacherPhoto = [
+//   "TEACHER-PHOTO-1.png",
+//   "TEACHER-PHOTO-3.png",
+//   "TEACHER-PHOTO-2.png",
+// ];
+
+// let teacherSurname = ["СУХОВ", "ЕБЛАНОВ", "ШУЛЬМИНА"];
+
+// let teacherName = [
+//   "Владислав Сергеевич",
+//   "Еблан Ебланович",
+//   "Ксения Владимирова",
+// ];
+
+// let leftSwitcher = document.getElementById("leftCard");
+// let rightSwitcher = document.getElementById("rightCard");
+// let index = 0;
+
+// let mainCardPhoto = document.querySelector(".section-teacher__card-photo");
+
+// let mainCardSurname = document.querySelector(
+//   ".section-teacher__card-name-text-1"
+// );
+// let mainCardName = document.querySelector(".section-teacher__card-name-text-2");
+// let test = document.querySelectorAll(
+//   ".section-teacher__card-description-list-el"
+// );
+
+// leftSwitcher.addEventListener("click", function () {
+//   if (index === 0) {
+//     index = teacherPhoto.length - 1;
+//   } else {
+//     index = index - 1;
+//   }
+
+//   updateTeacherInfo();
+//   console.log(leftSwitcher, rightSwitcher, index);
+// });
+
+// rightSwitcher.addEventListener("click", function () {
+//   if (index === teacherPhoto.length - 1) {
+//     index = 0;
+//   } else {
+//     index = index + 1;
+//   }
+//   updateTeacherInfo();
+//   console.log(leftSwitcher, rightSwitcher, index);
+// });
+
+// function updateTeacherInfo() {
+//   mainCardPhoto.src = "./assets/section-teachers/" + teacherPhoto[index];
+//   mainCardSurname.textContent = teacherSurname[index];
+//   mainCardName.textContent = teacherName[index];
+// }
