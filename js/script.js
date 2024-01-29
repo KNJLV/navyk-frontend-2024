@@ -244,9 +244,6 @@ let mainCardSurname = document.querySelector(
   ".section-teacher__card-name-text-1"
 );
 let mainCardName = document.querySelector(".section-teacher__card-name-text-2");
-let test = document.querySelectorAll(
-  ".section-teacher__card-description-list-el"
-);
 
 let leftSwitcherPhoto = document.querySelector(
   ".section-teacher__left-card-photo"
@@ -276,19 +273,20 @@ leftSwitcher.addEventListener("click", function () {
   } else {
     index = index - 1;
   }
-  if (indexL < 0) {
-    indexL = 0;
+  if (indexL === 0) {
+    indexL = teacherPhoto.length - 1;
   } else {
     indexL = indexL - 1;
   }
-  if (indexR < 0) {
-    indexR = 0;
+  if (indexR === 0) {
+    indexR = teacherPhoto.length - 1;
   } else {
     indexR = indexR - 1;
   }
   updateTeacherInfo();
   updateLeftSwitcherInfo();
   updateRightSwitcherInfo();
+  updateTeacherDesc();
   console.log(indexL, index, indexR);
 });
 
@@ -311,6 +309,7 @@ rightSwitcher.addEventListener("click", function () {
   updateTeacherInfo();
   updateLeftSwitcherInfo();
   updateRightSwitcherInfo();
+  updateTeacherDesc();
   console.log(indexL, index, indexR);
 });
 
@@ -329,4 +328,35 @@ function updateRightSwitcherInfo() {
   rightSwitcherPhoto.src = "./assets/section-teachers/" + teacherPhoto[indexR];
   rightSwitcherSurname.textContent = teacherSurname[indexR];
   rightSwitcherName.textContent = teacherName[indexR];
+}
+
+let teacherDesc = [
+  ' преподаватель регионального образовательного центра "Взлёт" и школьной академии главы города Королёва, учитель русского языка в одном из лучших лицеев Подмосковья',
+  " победитель филологических олимпиад разных уровней, составитель и проверяющий отборочных этапов ВсОШ по русскому языку",
+  " участник научных конференций по лингвистикеи лингвометодике",
+  " закончил школу с золотой медалью, сдал ОГЭ на 5 и ЕГЭ на 90+ без специальной подготовки",
+  "1ЕбЛан",
+  "2ЕбЛан",
+  "3ЕбЛан",
+  "4ЕбЛан",
+  'преподаватель регионального образовательного центра "Взлёт"',
+  "призёр заключительного этапа ВсОШ по литературе и перечневых олимпиад по русскому языку и литературе",
+  "студентка факультета гуманитарных наук Высшей школы экономики ",
+  "закончила школу с золотой медалью, сдала ОГЭ на 5 и ЕГЭ на 90+ без специальной подготовки",
+];
+
+let test = document.querySelectorAll(
+  ".section-teacher__card-description-list-el"
+);
+
+function updateTeacherDesc() {
+  for (let j = 0; j < test.length; j++) {
+    if (index === 0) {
+      test[j].textContent = teacherDesc[j + 4 * index];
+    } else if (index === 1) {
+      test[j].textContent = teacherDesc[j + 4 * index];
+    } else if (index === 2) {
+      test[j].textContent = teacherDesc[j + 4 * index];
+    }
+  }
 }
