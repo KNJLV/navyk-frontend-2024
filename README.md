@@ -6,6 +6,10 @@ ___
 
 *https://waydehueydeee.github.io/navyk-frontend-2024/*
 
-### Link to BACKEND Repository :
+### Link to BACKEND Repository:
 
 *https://github.com/waydehueydeee/navyk-backend-2024*
+
+#### CREATER:
+**Kinjalov Alexander**
+*t.me/KNJLV*
