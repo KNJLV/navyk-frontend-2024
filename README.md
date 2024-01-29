@@ -8,4 +8,4 @@ ___
 
 ### Link to BACKEND Repository :
 
-*https://waydehueydeee.github.io/navyk-backend-2024/*
+*https://github.com/waydehueydeee/navyk-backend-2024*
