@@ -216,59 +216,117 @@ buttons.addEventListener("click", (e) => {
 });
 // Отправка формы КОНЕЦ
 
-// ПОПЫТКА СДЕЛАТЬ КАРУСЭЛЬ) 
+// ПОПЫТКА СДЕЛАТЬ КАРУСЭЛЬ)
 
-// let teacherPhoto = [
-//   "TEACHER-PHOTO-1.png",
-//   "TEACHER-PHOTO-3.png",
-//   "TEACHER-PHOTO-2.png",
-// ];
+let teacherPhoto = [
+  "TEACHER-PHOTO-1.png",
+  "TEACHER-PHOTO-3.png",
+  "TEACHER-PHOTO-2.png",
+];
 
-// let teacherSurname = ["СУХОВ", "ЕБЛАНОВ", "ШУЛЬМИНА"];
+let teacherSurname = ["СУХОВ", "ЕБЛАНОВ", "ШУЛЬМИНА"];
 
-// let teacherName = [
-//   "Владислав Сергеевич",
-//   "Еблан Ебланович",
-//   "Ксения Владимирова",
-// ];
+let teacherName = [
+  "Владислав Сергеевич",
+  "Еблан Ебланович",
+  "Ксения Владимирова",
+];
 
-// let leftSwitcher = document.getElementById("leftCard");
-// let rightSwitcher = document.getElementById("rightCard");
-// let index = 0;
+let leftSwitcher = document.getElementById("leftCard");
+let rightSwitcher = document.getElementById("rightCard");
+let index = 0;
+let indexL = 2;
+let indexR = 1;
 
-// let mainCardPhoto = document.querySelector(".section-teacher__card-photo");
+let mainCardPhoto = document.querySelector(".section-teacher__card-photo");
 
-// let mainCardSurname = document.querySelector(
-//   ".section-teacher__card-name-text-1"
-// );
-// let mainCardName = document.querySelector(".section-teacher__card-name-text-2");
-// let test = document.querySelectorAll(
-//   ".section-teacher__card-description-list-el"
-// );
+let mainCardSurname = document.querySelector(
+  ".section-teacher__card-name-text-1"
+);
+let mainCardName = document.querySelector(".section-teacher__card-name-text-2");
+let test = document.querySelectorAll(
+  ".section-teacher__card-description-list-el"
+);
 
-// leftSwitcher.addEventListener("click", function () {
-//   if (index === 0) {
-//     index = teacherPhoto.length - 1;
-//   } else {
-//     index = index - 1;
-//   }
+let leftSwitcherPhoto = document.querySelector(
+  ".section-teacher__left-card-photo"
+);
+let leftSwitcherSurname = document.querySelector(
+  ".section-teacher__left-card-name-text-1"
+);
+let leftSwitcherName = document.querySelector(
+  ".section-teacher__left-card-name-text-2"
+);
 
-//   updateTeacherInfo();
-//   console.log(leftSwitcher, rightSwitcher, index);
-// });
+let rightSwitcherPhoto = document.querySelector(
+  ".section-teacher__right-card-photo"
+);
+let rightSwitcherSurname = document.querySelector(
+  ".section-teacher__right-card-name-text-1"
+);
+let rightSwitcherName = document.querySelector(
+  ".section-teacher__right-card-name-text-2"
+);
 
-// rightSwitcher.addEventListener("click", function () {
-//   if (index === teacherPhoto.length - 1) {
-//     index = 0;
-//   } else {
-//     index = index + 1;
-//   }
-//   updateTeacherInfo();
-//   console.log(leftSwitcher, rightSwitcher, index);
-// });
+console.log(indexL, index, indexR);
 
-// function updateTeacherInfo() {
-//   mainCardPhoto.src = "./assets/section-teachers/" + teacherPhoto[index];
-//   mainCardSurname.textContent = teacherSurname[index];
-//   mainCardName.textContent = teacherName[index];
-// }
+leftSwitcher.addEventListener("click", function () {
+  if (index === 0) {
+    index = teacherPhoto.length - 1;
+  } else {
+    index = index - 1;
+  }
+  if (indexL < 0) {
+    indexL = 0;
+  } else {
+    indexL = indexL - 1;
+  }
+  if (indexR < 0) {
+    indexR = 0;
+  } else {
+    indexR = indexR - 1;
+  }
+  updateTeacherInfo();
+  updateLeftSwitcherInfo();
+  updateRightSwitcherInfo();
+  console.log(indexL, index, indexR);
+});
+
+rightSwitcher.addEventListener("click", function () {
+  if (index === teacherPhoto.length - 1) {
+    index = 0;
+  } else {
+    index = index + 1;
+  }
+  if (indexR === teacherPhoto.length - 1) {
+    indexR = 0;
+  } else {
+    indexR = indexR + 1;
+  }
+  if (indexL === teacherPhoto.length - 1) {
+    indexL = 0;
+  } else {
+    indexL = indexL + 1;
+  }
+  updateTeacherInfo();
+  updateLeftSwitcherInfo();
+  updateRightSwitcherInfo();
+  console.log(indexL, index, indexR);
+});
+
+function updateTeacherInfo() {
+  mainCardPhoto.src = "./assets/section-teachers/" + teacherPhoto[index];
+  mainCardSurname.textContent = teacherSurname[index];
+  mainCardName.textContent = teacherName[index];
+}
+
+function updateLeftSwitcherInfo() {
+  leftSwitcherPhoto.src = "./assets/section-teachers/" + teacherPhoto[indexL];
+  leftSwitcherSurname.textContent = teacherSurname[indexL];
+  leftSwitcherName.textContent = teacherName[indexL];
+}
+function updateRightSwitcherInfo() {
+  rightSwitcherPhoto.src = "./assets/section-teachers/" + teacherPhoto[indexR];
+  rightSwitcherSurname.textContent = teacherSurname[indexR];
+  rightSwitcherName.textContent = teacherName[indexR];
+}
