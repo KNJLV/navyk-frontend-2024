@@ -1,4 +1,4 @@
-# navyk-webpage-2024 (new design)
+# Business card website for online school «‎НАВЫК»‎ (new design)
 
 ___
 
