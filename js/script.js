@@ -216,6 +216,8 @@ buttons.addEventListener("click", (e) => {
 });
 // Отправка формы КОНЕЦ
 
+// ПОПЫТКА СДЕЛАТЬ КАРУСЭЛЬ) 
+
 // let teacherPhoto = [
 //   "TEACHER-PHOTO-1.png",
 //   "TEACHER-PHOTO-3.png",
