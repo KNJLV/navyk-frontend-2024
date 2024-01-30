@@ -1,13 +1,17 @@
-# navyk-webpage-2024 (new design)
+# Business card website for online school «‎НАВЫК»‎
 
----
+___
 
-## Link to GitHub Pages:
+### Link to GitHub Pages:
 
 *https://waydehueydeee.github.io/navyk-frontend-2024/*
 
----
+### Link to BACKEND Repository:
 
-## Link to BACKEND Repository :
+*https://github.com/waydehueydeee/navyk-backend-2024*
 
-*https://waydehueydeee.github.io/navyk-backend-2024/*
+___
+
+### CREATER:
+**Kinjalov Alexander**  
+*https://t.me/KNJLV*
