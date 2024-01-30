@@ -52,7 +52,7 @@ let mainCardSurname = document.querySelector(
 let mainCardName = document.querySelector(".section-teacher__card-name-text-2");
 
 // все строки описания главной карточки
-let test = document.querySelectorAll(
+let descriptionStrings = document.querySelectorAll(
   ".section-teacher__card-description-list-el"
 );
 
@@ -158,13 +158,13 @@ function updateTeacherInfo() {
   // =====================================================
 
   //   обновление описания главной карточки
-  for (let j = 0; j < test.length; j++) {
+  for (let j = 0; j < descriptionStrings.length; j++) {
     if (index === 0) {
-      test[j].textContent = teacherDesc[j + 4 * index];
+      descriptionStrings[j].textContent = teacherDesc[j + 4 * index];
     } else if (index === 1) {
-      test[j].textContent = teacherDesc[j + 4 * index];
+      descriptionStrings[j].textContent = teacherDesc[j + 4 * index];
     } else if (index === 2) {
-      test[j].textContent = teacherDesc[j + 4 * index];
+      descriptionStrings[j].textContent = teacherDesc[j + 4 * index];
     }
   }
 
@@ -191,6 +191,9 @@ function updateTeacherInfo() {
   rightSwitcherName.textContent = teacherName[indexR];
 }
 
+// =====================================================
+
+// функция для анимации переключателей
 function opacityAnimation() {
   const switcherAnimate = [{ opacity: 0 }, { opacity: 0.5 }];
   const switcherTiming = {
