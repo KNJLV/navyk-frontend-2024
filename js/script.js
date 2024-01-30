@@ -150,10 +150,53 @@ button.addEventListener("click", (e) => {
 
 // ====================================================
 
+// Ширина окна браузера
+let screenWidth = window.screen.width;
+
 // Функция появления алерта об отправке формы
 function backgroundStyleChange() {
+  // Контейнер для алерта
   let a = document.querySelector(".good__attention");
-  a.innerHTML = `<div class="modal_window" style="
+
+  // Стили для мобильной версии
+  if (screenWidth <= 960) {
+    a.innerHTML = `<div class="modal_window" style="
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(2.5px);
+      z-index: 999;
+      ">
+	  
+      <div class="model_form" style="
+      display:flex;
+      width: 90%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    ">
+	
+	<div class="scroll" style="position: relative">
+	<img src="./assets/section-form/ALERT-BANNER.png" />
+	<div class="modalClose" style="
+      position: absolute;
+      cursor: pointer;
+      top: 3vw;
+      right: 6vw;
+      font-size: 7vw;
+	">✕</div>
+
+	</div>
+	</div>
+	</div>`;
+
+    // Стили для ПК версии
+  } else {
+    a.innerHTML = `<div class="modal_window" style="
       width: 100%;
       height: 100%;
       position: fixed;
@@ -186,6 +229,8 @@ function backgroundStyleChange() {
 	</div>
 	</div>
 	</div>`;
+  }
+
   let close_attention = document.querySelector(".modalClose");
   close_attention.addEventListener("click", (e) => {
     let modal_window = document.querySelector(".modal_window");
