@@ -12,6 +12,9 @@ ___
 
 ___
 
-### CREATER:
+### CREATERS:
 **Kinjalov Alexander**  
-*https://t.me/KNJLV*
+*https://t.me/KNJLV*  
+  
+**Nikita Syromytnikov**  
+*https://t.me/SyromyrnikovNikitaKorolev*
