@@ -90,6 +90,7 @@ buttons.addEventListener("click", (e) => {
       //   && parentEmail.value != ""
     ) {
       SendFormInfo();
+	  backgroundStyleChange();
     } else if (
       // проверка полей родителя (когда не заполнены поля)
       parentName.value == "" ||
@@ -114,6 +115,7 @@ buttons.addEventListener("click", (e) => {
       studentPhoneNumber.value != ""
     ) {
       SendFormInfo();
+	  backgroundStyleChange();
     } else if (
       // проверка полей родителя (когда не заполнены поля)
       parentName.value == "" ||
@@ -130,3 +132,53 @@ buttons.addEventListener("click", (e) => {
   }
 });
 // Отправка формы КОНЕЦ
+function backgroundStyleChange()
+{
+	let a = document.querySelector(".good__attention");
+	a.innerHTML = `<div class="modal_window" style="
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      ">
+	  
+      <div class="model_form" style="
+      display:flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    ">
+	
+	<div class="scroll" style="position: relative">
+	<img src="https://grantara.ru/wp-content/uploads/2023/06/image16-2.jpg" />
+	<div class="modalClose" style="
+      position: absolute;
+      cursor: pointer;
+      top: 20px;
+      right: 20px;
+      font-size: 32px;
+	">✕</div>
+
+	</div>
+	</div>
+	</div>`;
+let close_attention = document.querySelector(".modalClose");
+close_attention.addEventListener("click", (e) => {
+	let modal_window = document.querySelector(".modal_window");
+	modal_window.style.display="none";
+})
+}
+let courses_buttons = document.querySelectorAll(".section-courses__card-button-2");
+let courses_name = document.querySelectorAll(".section-courses__card-header-left-title")
+for(let i = 0; i<courses_buttons.length; i++){
+courses_buttons[i].addEventListener("click", (e) => {
+	let id_pole = document.querySelector("#formComment");
+	if(i!=3){
+	id_pole.value=`${courses_name[i].textContent} КУРС`;
+	}
+	else if(i==3){id_pole.value=`ОНЛАЙН-ЛЕКТОРИЙ`;}
+})}
