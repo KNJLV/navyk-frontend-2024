@@ -108,6 +108,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  -webkit-transition: all 0.75s cubic-bezier(0, 0.52, 0, 1);
+  transition: all 0.75s cubic-bezier(0, 0.52, 0, 1);
 }
 
 .section-teacher__left-card:hover {
@@ -158,6 +161,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  -webkit-transition: all 0.75s cubic-bezier(0, 0.52, 0, 1);
+  transition: all 0.75s cubic-bezier(0, 0.52, 0, 1);
 }
 
 .section-teacher__right-card:hover {

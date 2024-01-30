@@ -115,6 +115,7 @@ leftSwitcher.addEventListener("click", function () {
   } else {
     indexR = indexR - 1;
   }
+  opacityAnimation();
   updateTeacherInfo();
 });
 
@@ -137,6 +138,7 @@ rightSwitcher.addEventListener("click", function () {
   } else {
     indexL = indexL + 1;
   }
+  opacityAnimation();
   updateTeacherInfo();
 });
 
@@ -187,4 +189,14 @@ function updateTeacherInfo() {
 
   // обновление имени правой карточки
   rightSwitcherName.textContent = teacherName[indexR];
+}
+
+function opacityAnimation() {
+  const switcherAnimate = [{ opacity: 0 }, { opacity: 0.5 }];
+  const switcherTiming = {
+    duration: 150,
+    iterations: 1,
+  };
+  rightSwitcher.animate(switcherAnimate, switcherTiming);
+  leftSwitcher.animate(switcherAnimate, switcherTiming);
 }
