@@ -203,3 +203,32 @@ function opacityAnimation() {
   rightSwitcher.animate(switcherAnimate, switcherTiming);
   leftSwitcher.animate(switcherAnimate, switcherTiming);
 }
+
+// =====================================================
+
+// Левая стрелка в мобильной версии
+let leftArrow = document.querySelector(".section-teacher__arrow-left-icon");
+// Левая правая в мобильной версии
+let rightArrow = document.querySelector(".section-teacher__arrow-right-icon");
+
+// =====================================================
+
+// функция переключения "влево" в мобильной версии
+leftArrow.addEventListener("click", function () {
+  if (index === 0) {
+    index = teacherPhoto.length - 1;
+  } else {
+    index = index - 1;
+  }
+  updateTeacherInfo();
+});
+
+// функция переключения "вправо" в мобильной версии
+rightArrow.addEventListener("click", function () {
+  if (index === teacherPhoto.length - 1) {
+    index = 0;
+  } else {
+    index = index + 1;
+  }
+  updateTeacherInfo();
+});
