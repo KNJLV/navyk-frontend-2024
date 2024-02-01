@@ -1,489 +1,707 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <title>Навык</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Навык</title>
-</head>
-
-<body>
-
-  <!-- nav start -->
-  <nav class="nav">
-    <div class="nav-wrapper">
-      <ul class="nav__list">
-        <li class="nav__list-el">
-          <a href="#" class="nav__list-el-link"><img src="./assets/nav/navyk-logo.svg" alt="navyk-logo"
-              class="nav__list-el-logo" /></a>
-        </li>
-        <ul class="nav__list-center">
-          <li class="nav__list-center-el">
-            <a href="#subjects__anchor" class="nav__list-center-el-link">ОБУЧЕНИЕ</a>
+  <body>
+    <!-- nav start -->
+    <nav class="nav">
+      <div class="nav-wrapper">
+        <ul class="nav__list">
+          <!-- 1. логотип в навигации -->
+          <li class="nav__list-el">
+            <a href="#" class="nav__list-el-link"
+              ><img
+                src="./assets/nav/navyk-logo.svg"
+                alt="navyk-logo"
+                class="nav__list-el-logo"
+            /></a>
           </li>
-          <li class="nav__list-center-el">
-            <a href="#teacher__anchor" class="nav__list-center-el-link">ПРЕПОДАВАТЕЛИ</a>
-          </li>
-          <li class="nav__list-center-el">
-            <a href="#courses__anchor" class="nav__list-center-el-link">КУРСЫ</a>
+          <!-- 2. центральные кнопки навигации -->
+          <ul class="nav__list-center">
+            <li class="nav__list-center-el">
+              <a href="#subjects__anchor" class="nav__list-center-el-link"
+                >ОБУЧЕНИЕ</a
+              >
+            </li>
+            <li class="nav__list-center-el">
+              <a href="#teacher__anchor" class="nav__list-center-el-link"
+                >ПРЕПОДАВАТЕЛИ</a
+              >
+            </li>
+            <li class="nav__list-center-el">
+              <a href="#courses__anchor" class="nav__list-center-el-link"
+                >КУРСЫ</a
+              >
+            </li>
+          </ul>
+          <!-- 3. кнопка записи в навигации -->
+          <li class="nav__list-el">
+            <a href="#form__anchor" class="nav__list-el-link" id="nav-long-but"
+              >Оставить заявку</a
+            >
+            <a href="#form__anchor" class="nav__list-el-link" id="nav-short-but"
+              >Записаться</a
+            >
           </li>
         </ul>
-        <li class="nav__list-el">
-          <a href="#form__anchor" class="nav__list-el-link" id="nav-long-but">Оставить заявку</a>
-          <a href="#form__anchor" class="nav__list-el-link" id="nav-short-but">Записаться</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- nav end -->
+      </div>
+    </nav>
+    <!-- nav end -->
 
-  <!-- header start -->
-  <header class="header">
-    <div class="header__wrapper">
-      <div class="header__conteiner">
-        <div class="header__conteiner-titles">
-          <ul class="header__conteiner-titles-list">
-            <li class="header__conteiner-titles-list-el">ОНЛАЙН-ШКОЛА</li>
-            <li class="header__conteiner-titles-list-el">НОВОГО ПОКОЛЕНИЯ</li>
-            <li class="header__conteiner-titles-list-el">
-              МИНИМУМ УСИЛИЙ - МАКСИМУМ РЕЗУЛЬТАТА
+    <!-- header start -->
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__conteiner">
+          <div class="header__conteiner-titles">
+            <!-- заголовок сайта -->
+            <ul class="header__conteiner-titles-list">
+              <li class="header__conteiner-titles-list-el">ОНЛАЙН-ШКОЛА</li>
+              <li class="header__conteiner-titles-list-el">НОВОГО ПОКОЛЕНИЯ</li>
+              <li class="header__conteiner-titles-list-el">
+                МИНИМУМ УСИЛИЙ - МАКСИМУМ РЕЗУЛЬТАТА
+              </li>
+            </ul>
+          </div>
+          <!-- пчеликс с пазлом справа -->
+          <img
+            src="./assets/header/character.svg"
+            alt="character"
+            class="header__character-img" />
+        </div>
+      </div>
+      <div class="header__wrapper-banner">
+        <!-- баннер для width > 960px -->
+        <img
+          src="./assets/header/banner.png"
+          alt="banner"
+          class="header__banner" />
+        <!-- баннер для width < 960px -->
+        <img
+          src="./assets/header/banner-placeholder.png"
+          alt="banner"
+          class="header__banner" />
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- section-differences start -->
+    <section class="section-differences">
+      <div class="section-differences-wrapper">
+        <ul class="section-differences-list">
+          <!-- 1. блок преимуществ -->
+          <li class="section-differences-list-el block-shadow-and-stroke">
+            <p class="section-differences-list-el-text">
+              Коммуникативно деятельностный подход к обучению
+            </p>
+            <img
+              src="./assets/section-differences/FGOS-ICON.svg"
+              alt=""
+              class="section-differences-list-el-icon" />
+          </li>
+          <!-- 2. блок преимуществ -->
+          <li class="section-differences-list-el block-shadow-and-stroke">
+            <p class="section-differences-list-el-text">
+              Выход за рамки школьной программы
+            </p>
+            <img
+              src="./assets/section-differences/PUZZLE-ICON.svg"
+              alt=""
+              class="section-differences-list-el-icon" />
+          </li>
+          <!-- 3. блок преимуществ -->
+          <li class="section-differences-list-el block-shadow-and-stroke">
+            <p class="section-differences-list-el-text">
+              Сотрудничество молодых специалистов с заслуженными учёными
+            </p>
+            <img
+              src="./assets/section-differences/CAPE-ICON.svg"
+              alt=""
+              class="section-differences-list-el-icon" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- section-differences end -->
+
+    <!-- section-subjects start -->
+    <section class="section-subjects">
+      <p class="section-subjects__title" id="subjects__anchor">НАПРАВЛЕНИЯ</p>
+      <div class="section-subjects__wrapper">
+        <ul class="section-subjects__list">
+          <!-- 1. кнопка выбора предмета -->
+          <li class="section-subjects__list-el" tabindex="0">
+            <img
+              src="./assets/section-subjects/swift.svg"
+              alt=""
+              class="section-subjects__list-el-icon" />
+            <p class="section-subjects__list-el-title">Русский язык</p>
+          </li>
+          <!-- 2. кнопка выбора предмета -->
+          <li class="section-subjects__list-el" tabindex="0">
+            <img
+              src="./assets/section-subjects/math.svg"
+              alt=""
+              class="section-subjects__list-el-icon" />
+            <p class="section-subjects__list-el-title">Математика</p>
+          </li>
+          <!-- 3. кнопка выбора предмета -->
+          <li class="section-subjects__list-el" tabindex="0">
+            <img
+              src="./assets/section-subjects/stat.svg"
+              alt=""
+              class="section-subjects__list-el-icon" />
+            <p class="section-subjects__list-el-title">Обществознание</p>
+          </li>
+          <!-- 4. кнопка выбора предмета -->
+          <li class="section-subjects__list-el" tabindex="0">
+            <img
+              src="./assets/section-subjects/tea.svg"
+              alt=""
+              class="section-subjects__list-el-icon" />
+            <p class="section-subjects__list-el-title">Английский язык</p>
+          </li>
+          <!-- 5. кнопка выбора предмета -->
+          <li class="section-subjects__list-el" tabindex="0">
+            <img
+              src="./assets/section-subjects/quest.svg"
+              alt=""
+              class="section-subjects__list-el-icon" />
+            <p class="section-subjects__list-el-title">idk</p>
+          </li>
+          <!-- 6. кнопка выбора предмета -->
+          <li class="section-subjects__list-el" tabindex="0">
+            <img
+              src="./assets/section-subjects/dna.svg"
+              alt=""
+              class="section-subjects__list-el-icon" />
+            <p class="section-subjects__list-el-title">Биология</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- section-subjects end -->
+
+    <!-- section-supervisor start -->
+    <section class="section-supervisor">
+      <p class="section-supervisor__title" id="teacher__anchor">
+        НАУЧНЫЙ РУКОВОДИТЕЛЬ
+      </p>
+      <div class="section-supervisor__wrapper">
+        <div class="section-supervisor-left-blocks">
+          <!-- блок с именем руководителя -->
+          <div class="section-supervisor__name-block">
+            <p class="section-supervisor__name">ГАЦ</p>
+            <p class="section-supervisor__surename">Ирэн Юрьевна</p>
+          </div>
+          <!-- блок с логотипами руководителя чзх? -->
+          <div class="section-supervisor__icon-block">
+            <!-- 1. логотип -->
+            <a
+              href="http://rao.rusacademedu.ru/regedit_crt_expert1/?p=Г"
+              target="_blank"
+              class="section-supervisor__icon-link">
+              <img
+                src="./assets/section-supervisor/ROSACAD-ICON.svg"
+                alt=""
+                class="section-supervisor__icon" />
+            </a>
+            <!-- 2. логотип -->
+            <a
+              href="https://guppros.ru/ru/fakultety-i-instituty/faculties/russkoj-filologii/kafedra-metodiki-prepodavanija-russkogo-jazyka-i-literatury-2"
+              target="_blank"
+              class="section-supervisor__icon-link">
+              <img
+                src="./assets/section-supervisor/PROSVET-ICON.svg"
+                alt=""
+                class="section-supervisor__icon" />
+            </a>
+            <!-- 3. логотип -->
+            <a
+              href="http://www.manpo.ru"
+              target="_blank"
+              class="section-supervisor__icon-link">
+              <img
+                src="./assets/section-supervisor/MANPO-ICON.svg"
+                alt=""
+                class="section-supervisor__icon" />
+            </a>
+          </div>
+        </div>
+        <!-- описание для рукрводителя -->
+        <div class="section-supervisor__description-block">
+          <ul class="section-supervisor__description-list">
+            <li class="section-supervisor__description-list-el">
+              федеральный эксперт в сфере образования
+            </li>
+            <li class="section-supervisor__description-list-el">
+              доктор педагогических наук, профессор кафедры методики
+              преподавания русского языка и литературы факультета русской
+              филологии Государственного университета просвещения
+            </li>
+            <li class="section-supervisor__description-list-el">
+              академик Международной академии наук педагогического образования
+            </li>
+            <li class="section-supervisor__description-list-el">
+              автор свыше 200 научно-методических публикаций по проблемам
+              лингвистической подготовки школьников в современной языковой
+              ситуации
             </li>
           </ul>
         </div>
-        <img src="./assets/header/character.svg" alt="character" class="header__character-img" />
       </div>
-    </div>
-    <div class="header__wrapper-banner">
-      <img src="./assets/header/banner.png" alt="banner" class="header__banner" />
-      <img src="./assets/header/banner-placeholder.png" alt="banner" class="header__banner" />
-    </div>
-  </header>
-  <!-- header end -->
+    </section>
+    <!-- section-supervisor end -->
 
-  <!-- section-differences start -->
-  <section class="section-differences">
-    <div class="section-differences-wrapper">
-      <ul class="section-differences-list">
-        <li class="section-differences-list-el block-shadow-and-stroke">
-          <p class="section-differences-list-el-text">
-            Коммуникативно деятельностный подход к обучению
-          </p>
-          <img src="./assets/section-differences/FGOS-ICON.svg" alt="" class="section-differences-list-el-icon" />
-        </li>
-        <li class="section-differences-list-el block-shadow-and-stroke">
-          <p class="section-differences-list-el-text">
-            Выход за рамки школьной программы
-          </p>
-          <img src="./assets/section-differences/PUZZLE-ICON.svg" alt="" class="section-differences-list-el-icon" />
-        </li>
-        <li class="section-differences-list-el block-shadow-and-stroke">
-          <p class="section-differences-list-el-text">
-            Сотрудничество молодых специалистов с заслуженными учёными
-          </p>
-          <img src="./assets/section-differences/CAPE-ICON.svg" alt="" class="section-differences-list-el-icon" />
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- section-differences end -->
-
-  <!-- section-subjects start -->
-  <section class="section-subjects">
-    <p class="section-subjects__title" id="subjects__anchor">НАПРАВЛЕНИЯ</p>
-    <div class="section-subjects__wrapper">
-      <ul class="section-subjects__list">
-        <li class="section-subjects__list-el" tabindex="0">
-          <img src="./assets/section-subjects/swift.svg" alt="" class="section-subjects__list-el-icon" />
-          <p class="section-subjects__list-el-title">Русский язык</p>
-        </li>
-        <li class="section-subjects__list-el" tabindex="0">
-          <img src="./assets/section-subjects/math.svg" alt="" class="section-subjects__list-el-icon" />
-          <p class="section-subjects__list-el-title">Математика</p>
-        </li>
-        <li class="section-subjects__list-el" tabindex="0">
-          <img src="./assets/section-subjects/stat.svg" alt="" class="section-subjects__list-el-icon" />
-          <p class="section-subjects__list-el-title">Обществознание</p>
-        </li>
-        <li class="section-subjects__list-el" tabindex="0">
-          <img src="./assets/section-subjects/tea.svg" alt="" class="section-subjects__list-el-icon" />
-          <p class="section-subjects__list-el-title">Английский язык</p>
-        </li>
-        <li class="section-subjects__list-el" tabindex="0">
-          <img src="./assets/section-subjects/quest.svg" alt="" class="section-subjects__list-el-icon" />
-          <p class="section-subjects__list-el-title">idk</p>
-        </li>
-        <li class="section-subjects__list-el" tabindex="0">
-          <img src="./assets/section-subjects/dna.svg" alt="" class="section-subjects__list-el-icon" />
-          <p class="section-subjects__list-el-title">Биология</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- section-subjects end -->
-
-  <!-- section-supervisor start -->
-  <section class="section-supervisor">
-    <p class="section-supervisor__title" id="teacher__anchor">
-      НАУЧНЫЙ РУКОВОДИТЕЛЬ
-    </p>
-    <div class="section-supervisor__wrapper">
-      <div class="section-supervisor-left-blocks">
-        <div class="section-supervisor__name-block">
-          <p class="section-supervisor__name">ГАЦ</p>
-          <p class="section-supervisor__surename">Ирэн Юрьевна</p>
-        </div>
-        <div class="section-supervisor__icon-block">
-          <a href="http://rao.rusacademedu.ru/regedit_crt_expert1/?p=Г" target="_blank"
-            class="section-supervisor__icon-link">
-            <img src="./assets/section-supervisor/ROSACAD-ICON.svg" alt="" class="section-supervisor__icon" />
-          </a>
-
-          <a href="https://guppros.ru/ru/fakultety-i-instituty/faculties/russkoj-filologii/kafedra-metodiki-prepodavanija-russkogo-jazyka-i-literatury-2"
-            target="_blank" class="section-supervisor__icon-link">
-            <img src="./assets/section-supervisor/PROSVET-ICON.svg" alt="" class="section-supervisor__icon" />
-          </a>
-
-          <a href="http://www.manpo.ru" target="_blank" class="section-supervisor__icon-link">
-            <img src="./assets/section-supervisor/MANPO-ICON.svg" alt="" class="section-supervisor__icon" />
-          </a>
-        </div>
-      </div>
-      <div class="section-supervisor__description-block">
-        <ul class="section-supervisor__description-list">
-          <li class="section-supervisor__description-list-el">
-            федеральный эксперт в сфере образования
-          </li>
-          <li class="section-supervisor__description-list-el">
-            доктор педагогических наук, профессор кафедры методики
-            преподавания русского языка и литературы факультета русской
-            филологии Государственного университета просвещения
-          </li>
-          <li class="section-supervisor__description-list-el">
-            академик Международной академии наук педагогического образования
-          </li>
-          <li class="section-supervisor__description-list-el">
-            автор свыше 200 научно-методических публикаций по проблемам
-            лингвистической подготовки школьников в современной языковой
-            ситуации
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- section-supervisor end -->
-
-  <!-- section-teacher start -->
-  <section class="section-teacher">
-    <p class="section-teacher__title">ПРЕПОДАВАТЕЛИ</p>
-    <div class="section-teacher__wrapper">
-      <div class="section-teacher__left-card" id="leftCard">
-        <img src="./assets/section-teachers/TEACHER-PHOTO-2.png" alt="" class="section-teacher__left-card-photo" />
-        <div class="section-teacher__left-card-name">
-          <p class="section-teacher__left-card-name-text-1">ШУЛЬМИНА</p>
-          <p class="section-teacher__left-card-name-text-2">
-            Ксения Владимировна
-          </p>
-        </div>
-      </div>
-      <div class="section-teacher__card">
-        <div class="section-teacher__card-left">
-          <div class="section-teacher__card-left-photo-and-arrows">
-            <img src="./assets/section-teachers/arrow-left.svg" alt="" class="section-teacher__arrow-left-icon" />
-            <img src="./assets/section-teachers/TEACHER-PHOTO-1.png" alt="" class="section-teacher__card-photo" />
-            <img src="./assets/section-teachers/arrow-right.svg" alt="" class="section-teacher__arrow-right-icon" />
-          </div>
-          <div class="section-teacher__card-name">
-            <p class="section-teacher__card-name-text-1">СУХОВ</p>
-            <p class="section-teacher__card-name-text-2">
-              Владислав Сергеевич
+    <!-- section-teacher start -->
+    <section class="section-teacher">
+      <p class="section-teacher__title">ПРЕПОДАВАТЕЛИ</p>
+      <div class="section-teacher__wrapper">
+        <!-- преподаватель слева -->
+        <div class="section-teacher__left-card" id="leftCard">
+          <img
+            src="./assets/section-teachers/TEACHER-PHOTO-2.png"
+            alt=""
+            class="section-teacher__left-card-photo" />
+          <div class="section-teacher__left-card-name">
+            <p class="section-teacher__left-card-name-text-1">ШУЛЬМИНА</p>
+            <p class="section-teacher__left-card-name-text-2">
+              Ксения Владимировна
             </p>
           </div>
         </div>
-        <div class="section-teacher__card-description">
-          <ul class="section-teacher__card-description-list">
-            <li class="section-teacher__card-description-list-el">
-              преподаватель регионального образовательного центра "Взлёт" и
-              школьной академии главы города Королёва, учитель русского языка
-              в одном из лучших лицеев Подмосковья
+        <!-- преподаватель в центре -->
+        <div class="section-teacher__card">
+          <div class="section-teacher__card-left">
+            <div class="section-teacher__card-left-photo-and-arrows">
+              <img
+                src="./assets/section-teachers/arrow-left.svg"
+                alt=""
+                class="section-teacher__arrow-left-icon" />
+              <img
+                src="./assets/section-teachers/TEACHER-PHOTO-1.png"
+                alt=""
+                class="section-teacher__card-photo" />
+              <img
+                src="./assets/section-teachers/arrow-right.svg"
+                alt=""
+                class="section-teacher__arrow-right-icon" />
+            </div>
+            <div class="section-teacher__card-name">
+              <p class="section-teacher__card-name-text-1">СУХОВ</p>
+              <p class="section-teacher__card-name-text-2">
+                Владислав Сергеевич
+              </p>
+            </div>
+          </div>
+          <!-- описание преподавателя в центре -->
+          <div class="section-teacher__card-description">
+            <ul class="section-teacher__card-description-list">
+              <li class="section-teacher__card-description-list-el">
+                преподаватель регионального образовательного центра "Взлёт" и
+                школьной академии главы города Королёва, учитель русского языка
+                в одном из лучших лицеев Подмосковья
+              </li>
+              <li class="section-teacher__card-description-list-el">
+                победитель филологических олимпиад разных уровней, составитель и
+                проверяющий отборочных этапов ВсОШ по русскому языку
+              </li>
+              <li class="section-teacher__card-description-list-el">
+                участник научных конференций по лингвистикеи лингвометодике
+              </li>
+              <li class="section-teacher__card-description-list-el">
+                закончил школу с золотой медалью, сдал ОГЭ на 5 и ЕГЭ на 90+ без
+                специальной подготовки
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- преподаватель справа -->
+        <div class="section-teacher__right-card" id="rightCard">
+          <img
+            src="./assets/section-teachers/TEACHER-PHOTO-3.png"
+            alt=""
+            class="section-teacher__right-card-photo" />
+
+          <div class="section-teacher__right-card-name">
+            <p class="section-teacher__right-card-name-text-1">ЕБЛАНОВ</p>
+            <p class="section-teacher__right-card-name-text-2">
+              Еблан Ебланович
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-teacher end -->
+
+    <!-- section-courses start -->
+    <section class="section-courses">
+      <p class="section-courses__title" id="courses__anchor">КУРСЫ</p>
+      <div class="section-courses__wrapper">
+        <!-- 1. карточка курса -->
+        <div class="section-courses__card">
+          <div class="section-courses__card-header">
+            <div class="section-courses__card-header-left">
+              <p class="section-courses__card-header-left-title">ОСНОВНОЙ</p>
+              <div class="section-courses__card-header-title-description">
+                <p class="section-courses__card-header-left-subtitle">КУРС</p>
+                <div class="section-courses__card-header-left-hashtags">
+                  <p class="section-courses__card-header-left-hashtag-1">
+                    #ясосал
+                  </p>
+                  <p class="section-courses__card-header-left-hashtag-2">
+                    #собак@
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/section-courses/MAIN-COURSE-ICON.svg"
+              alt="MAIN-COURSE-ICON"
+              class="section-courses__card-header-right-icon" />
+          </div>
+          <div class="section-courses__card-description">
+            Уникальный универсальный способ освоить нормы русского литературного
+            языка, соответствующий всем образовательным стандартам, но выходящий
+            за рамки школьной программы. Учащиеся находят ответ на вопрос "Зачем
+            необходимо изучать язык?" и научно обосновывают ненавистные для
+            школьников правила орфографии и пунктуации.
+          </div>
+          <div class="section-courses__card-button-block">
+            <a class="section-courses__card-button-1" href="#form__anchor"
+              >Подробнее</a
+            >
+            <a class="section-courses__card-button-2" href="#form__anchor"
+              >Записаться</a
+            >
+          </div>
+        </div>
+        <!-- 2. карточка курса -->
+        <div class="section-courses__card">
+          <div class="section-courses__card-header">
+            <div class="section-courses__card-header-left">
+              <p class="section-courses__card-header-left-title">УГЛУБЛЁННЫЙ</p>
+              <div class="section-courses__card-header-title-description">
+                <p class="section-courses__card-header-left-subtitle">КУРС</p>
+                <div class="section-courses__card-header-left-hashtags">
+                  <p class="section-courses__card-header-left-hashtag-1">
+                    #ясосал
+                  </p>
+                  <p class="section-courses__card-header-left-hashtag-2">
+                    #собак@
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/section-courses/ICEBERG-ICON.svg"
+              alt="MAIN-COURSE-ICON"
+              class="section-courses__card-header-right-icon" />
+          </div>
+          <div class="section-courses__card-description">
+            Увлекательное погружение в тонкости языка, о которых никогда не
+            расскажут в школе. Никакой орфографии и пунктуации — только
+            настоящая наука. Знания из этой области в соединении со смекалкой
+            создадут фундамент для олимпиадной карьеры. Занятия с многократными
+            победителями лингвистических олимпиад, дополнительные мастер-классы
+            с профессорами филологии.
+          </div>
+          <div class="section-courses__card-button-block">
+            <a class="section-courses__card-button-1" href="#form__anchor"
+              >Подробнее</a
+            >
+            <a class="section-courses__card-button-2" href="#form__anchor"
+              >Записаться</a
+            >
+          </div>
+        </div>
+        <!-- 3. карточка курса -->
+        <div class="section-courses__card">
+          <div class="section-courses__card-header">
+            <div class="section-courses__card-header-left">
+              <p class="section-courses__card-header-left-title">ИНТЕНСИВНЫЙ</p>
+              <div class="section-courses__card-header-title-description">
+                <p class="section-courses__card-header-left-subtitle">КУРС</p>
+                <div class="section-courses__card-header-left-hashtags">
+                  <p class="section-courses__card-header-left-hashtag-1">
+                    #ясосал
+                  </p>
+                  <p class="section-courses__card-header-left-hashtag-2">
+                    #собак@
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/section-courses/INTENSIVE-ICON.svg"
+              alt="MAIN-COURSE-ICON"
+              class="section-courses__card-header-right-icon" />
+          </div>
+          <div class="section-courses__card-description">
+            Отличный вариант для тех, кто привык решать большие задачи в сжатые
+            сроки. Это стиль жизни, от которого трудно отказаться. Курс отражает
+            наш принцип "Минимум усилий - максимум результата". Уверен, что
+            тратить годы на один предмет нецелесообразно? Экономь время,
+            управляй временем, обгоняй время.
+          </div>
+          <div class="section-courses__card-button-block">
+            <a class="section-courses__card-button-1" href="#form__anchor"
+              >Подробнее</a
+            >
+            <a class="section-courses__card-button-2" href="#form__anchor"
+              >Записаться</a
+            >
+          </div>
+        </div>
+        <!-- 4. карточка курса -->
+        <div class="section-courses__card">
+          <div class="section-courses__card-header">
+            <img
+              src="./assets/section-courses/NAVYK-PLUS-LOGO.svg"
+              alt=""
+              class="section-courses__card-header-right-logo" />
+            <img
+              src="./assets/section-courses/NAVYK-PLUS-ICON.svg"
+              alt="MAIN-COURSE-ICON"
+              class="section-courses__card-header-right-icon" />
+          </div>
+          <div class="section-courses__card-description">
+            Специальный проект нашей онлайн-школы. Площадка, объединяющая
+            неравнодушных слушателей и увлечённых спикеров. Среди выступающих
+            преподаватели "НАВЫКа", профессоры ведущих университетов страны,
+            академики международного уровня и просто талантливые специалисты из
+            разных сфер. Свободный вход на фестиваль науки для всех наших
+            друзей.
+          </div>
+          <div class="section-courses__card-button-block">
+            <a class="section-courses__card-button-1" href="#form__anchor"
+              >Подробнее</a
+            >
+            <a class="section-courses__card-button-2" href="#form__anchor"
+              >Записаться</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-courses end -->
+
+    <!-- section-form start -->
+    <section class="section-form">
+      <p class="section-form__title" id="form__anchor">ФОРМА ЗАЯВКИ</p>
+      <div class="section-form__wrapper">
+        <div class="section-form__block">
+          <!-- левая часть формы с полями -->
+          <div class="section-form__block-left">
+            <!-- переключатели родитель/ученк -->
+            <div class="section-form__block-left__slider">
+              <input
+                type="radio"
+                name="contactFormCustomer"
+                id="contactFormParentButton"
+                value="parent"
+                checked />
+              <label
+                for="contactFormParentButton"
+                class="section-form__block-left-parent-button">
+                Родитель</label
+              >
+              <input
+                type="radio"
+                name="contactFormCustomer"
+                id="contactFormStudentButton"
+                value="student" />
+              <label
+                for="contactFormStudentButton"
+                class="section-form__block-left-student-button">
+                Ученик</label
+              >
+            </div>
+            <!-- поля ввода в форме -->
+            <div class="section-form__block-left-inputs">
+              <input
+                type="text"
+                id="parentName"
+                name="parentName"
+                placeholder="Имя родителя"
+                class="section-form__block-left__info-line" />
+              <input
+                type="tel"
+                data-tel-input
+                placeholder="Телефон родителя"
+                maxlength="18"
+                id="parentPhoneNumber"
+                name="parentPhoneNumber"
+                class="section-form__block-left__info-line" />
+              <input
+                type="text"
+                id="studentName"
+                name="studentName"
+                placeholder="Имя ученика"
+                class="section-form__block-left__info-line" />
+              <input
+                type="tel"
+                data-tel-input
+                maxlength="18"
+                id="studentPhoneNumber"
+                name="studentPhoneNumber"
+                placeholder="Телефон ученика"
+                class="section-form__block-left__info-line" />
+              <input
+                type="text"
+                id="formComment"
+                name="formComment"
+                placeholder="Комментарий (необязательно)"
+                class="section-form__block-left__info-line" />
+              <select
+                name="classNumber"
+                id="classNumber"
+                class="section-form__block-left__select">
+                <option value="6">6 класс</option>
+                <option value="7">7 класс</option>
+                <option value="8">8 класс</option>
+                <option value="9" selected>9 класс</option>
+                <option value="10">10 класс</option>
+                <option value="11">11 класс</option>
+              </select>
+            </div>
+            <!-- обработка персональных данных -->
+            <div class="section-form__block-left__accept">
+              <label for="checkbox" class="checkbox-label">
+                <input type="checkbox" id="checkbox" class="checkbox" />
+                <span class="checkbox-view">
+                  <svg
+                    class="checkbox-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    viewBox="0 0 511.985 511.985">
+                    <path
+                      fill="#fff"
+                      d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z" />
+                  </svg>
+                </span>
+              </label>
+              <p class="section-form__block-left__accept-text">
+                <a
+                  href="./html-documents/processing-of-personal-data-navyk.html"
+                  target="_blank"
+                  >Согласен</a
+                >
+                на обработку персональных данных
+              </p>
+            </div>
+            <button class="section-form__block-left__button">
+              Оставить заявку
+            </button>
+          </div>
+          <!-- правая часть формы с изображениями -->
+          <div class="section-form__block-right">
+            <img
+              src="./assets/section-form/FORM-NAVYK-ICON.svg"
+              alt=""
+              class="section-form__block-right-navyk-logo" />
+            <img
+              src="./assets/section-form/FORM-DRAW-TEXT.svg"
+              alt=""
+              class="section-form__block-right-answer-text" />
+            <img
+              src="./assets/section-form/FORM-CHARACTER.svg"
+              alt=""
+              class="section-form__block-right-phone-gay" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-form end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <!-- 1. информационный блок -->
+        <div class="footer__block">
+          <p class="footer-block-title">Документы</p>
+          <ul class="footer__block-list">
+            <li class="footer__block-list-el">
+              <a
+                href="./html-documents/privacy-policy-navyk.html"
+                target="_blank"
+                class="footer__block-list-el-link"
+                >Политика конфендициальности</a
+              >
             </li>
-            <li class="section-teacher__card-description-list-el">
-              победитель филологических олимпиад разных уровней, составитель и
-              проверяющий отборочных этапов ВсОШ по русскому языку
-            </li>
-            <li class="section-teacher__card-description-list-el">
-              участник научных конференций по лингвистикеи лингвометодике
-            </li>
-            <li class="section-teacher__card-description-list-el">
-              закончил школу с золотой медалью, сдал ОГЭ на 5 и ЕГЭ на 90+ без
-              специальной подготовки
+            <li class="footer__block-list-el">
+              <a
+                href="./html-documents/public-offer-navyk.html"
+                target="_blank"
+                class="footer__block-list-el-link"
+                >Публичная оферта</a
+              >
             </li>
           </ul>
         </div>
-      </div>
+        <!-- 2. информационный блок -->
+        <div class="footer__block">
+          <img
+            src="./assets/footer/text-logo-aboba.svg"
+            alt=""
+            class="footer__block-logo" />
+        </div>
+        <!-- 3. информационный блок -->
+        <div class="footer__block">
+          <p class="footer-block-title">Партнёры</p>
 
-      <div class="section-teacher__right-card" id="rightCard">
-        <img src="./assets/section-teachers/TEACHER-PHOTO-3.png" alt="" class="section-teacher__right-card-photo" />
+          <img
+            src="./assets/footer/prosvet-logo.svg"
+            alt=""
+            class="footer-block-prosvet-logo" />
+        </div>
+        <!-- 4. информационный блок -->
+        <div class="footer__block">
+          <p class="footer-block-title">Контакты</p>
+          <ul class="footer__block-list">
+            <li class="footer__block-list-el">
+              <a href="#" class="footer__block-list-el-link"
+                >info@navyk.school</a
+              >
+            </li>
+            <li class="footer__block-list-el">
+              <a href="#" class="footer__block-list-el-link"
+                >+7-985-967-67-77</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- 5. информационный блок -->
+        <div class="footer__block">
+          <p class="footer-block-title">Реквизиты</p>
+          <ul class="footer__block-list">
+            <li class="footer__block-list-el">ИП СУХОВ ВЛАДИСЛАВ СЕРГЕЕВИЧ</li>
+            <li class="footer__block-list-el">ОГРН: 323508100368822</li>
+            <li class="footer__block-list-el">ИНН: 501807943440</li>
+            <li class="footer__block-list-el">
+              141076, Московская область, г. Королёв,хл
+            </li>
+            <li class="footer__block-list-el">
+              ул. Калининградская, дом 17к2, кв. 266
+            </li>
+          </ul>
+        </div>
+        <!-- 6. информационный блок -->
+        <div class="footer__block"></div>
+      </div>
+    </footer>
+    <!-- footer end -->
 
-        <div class="section-teacher__right-card-name">
-          <p class="section-teacher__right-card-name-text-1">ЕБЛАНОВ</p>
-          <p class="section-teacher__right-card-name-text-2">
-            Еблан Ебланович
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- section-teacher end -->
+    <!-- alert conteiner start -->
+    <div class="good__attention"></div>
+    <!-- alert conteiner end -->
+  </body>
 
-  <!-- section-courses start -->
-  <section class="section-courses">
-    <p class="section-courses__title" id="courses__anchor">КУРСЫ</p>
-    <div class="section-courses__wrapper">
-      <div class="section-courses__card">
-        <div class="section-courses__card-header">
-          <div class="section-courses__card-header-left">
-            <p class="section-courses__card-header-left-title">ОСНОВНОЙ</p>
-            <div class="section-courses__card-header-title-description">
-              <p class="section-courses__card-header-left-subtitle">КУРС</p>
-              <div class="section-courses__card-header-left-hashtags">
-                <p class="section-courses__card-header-left-hashtag-1">
-                  #ясосал
-                </p>
-                <p class="section-courses__card-header-left-hashtag-2">
-                  #собак@
-                </p>
-              </div>
-            </div>
-          </div>
-          <img src="./assets/section-courses/MAIN-COURSE-ICON.svg" alt="MAIN-COURSE-ICON"
-            class="section-courses__card-header-right-icon" />
-        </div>
-        <div class="section-courses__card-description">
-          Уникальный универсальный способ освоить нормы русского литературного
-          языка, соответствующий всем образовательным стандартам, но выходящий
-          за рамки школьной программы. Учащиеся находят ответ на вопрос "Зачем
-          необходимо изучать язык?" и научно обосновывают ненавистные для
-          школьников правила орфографии и пунктуации.
-        </div>
-        <div class="section-courses__card-button-block">
-          <a class="section-courses__card-button-1" href="#form__anchor">Подробнее</a>
-          <a class="section-courses__card-button-2" href="#form__anchor">Записаться</a>
-        </div>
-      </div>
-
-      <div class="section-courses__card">
-        <div class="section-courses__card-header">
-          <div class="section-courses__card-header-left">
-            <p class="section-courses__card-header-left-title">УГЛУБЛЁННЫЙ</p>
-            <div class="section-courses__card-header-title-description">
-              <p class="section-courses__card-header-left-subtitle">КУРС</p>
-              <div class="section-courses__card-header-left-hashtags">
-                <p class="section-courses__card-header-left-hashtag-1">
-                  #ясосал
-                </p>
-                <p class="section-courses__card-header-left-hashtag-2">
-                  #собак@
-                </p>
-              </div>
-            </div>
-          </div>
-          <img src="./assets/section-courses/ICEBERG-ICON.svg" alt="MAIN-COURSE-ICON"
-            class="section-courses__card-header-right-icon" />
-        </div>
-        <div class="section-courses__card-description">
-          Увлекательное погружение в тонкости языка, о которых никогда не
-          расскажут в школе. Никакой орфографии и пунктуации — только
-          настоящая наука. Знания из этой области в соединении со смекалкой
-          создадут фундамент для олимпиадной карьеры. Занятия с многократными
-          победителями лингвистических олимпиад, дополнительные мастер-классы
-          с профессорами филологии.
-        </div>
-        <div class="section-courses__card-button-block">
-          <a class="section-courses__card-button-1" href="#form__anchor">Подробнее</a>
-          <a class="section-courses__card-button-2" href="#form__anchor">Записаться</a>
-        </div>
-      </div>
-
-      <div class="section-courses__card">
-        <div class="section-courses__card-header">
-          <div class="section-courses__card-header-left">
-            <p class="section-courses__card-header-left-title">ИНТЕНСИВНЫЙ</p>
-            <div class="section-courses__card-header-title-description">
-              <p class="section-courses__card-header-left-subtitle">КУРС</p>
-              <div class="section-courses__card-header-left-hashtags">
-                <p class="section-courses__card-header-left-hashtag-1">
-                  #ясосал
-                </p>
-                <p class="section-courses__card-header-left-hashtag-2">
-                  #собак@
-                </p>
-              </div>
-            </div>
-          </div>
-          <img src="./assets/section-courses/INTENSIVE-ICON.svg" alt="MAIN-COURSE-ICON"
-            class="section-courses__card-header-right-icon" />
-        </div>
-        <div class="section-courses__card-description">
-          Отличный вариант для тех, кто привык решать большие задачи в сжатые
-          сроки. Это стиль жизни, от которого трудно отказаться. Курс отражает
-          наш принцип "Минимум усилий - максимум результата". Уверен, что
-          тратить годы на один предмет нецелесообразно? Экономь время,
-          управляй временем, обгоняй время.
-        </div>
-        <div class="section-courses__card-button-block">
-          <a class="section-courses__card-button-1" href="#form__anchor">Подробнее</a>
-          <a class="section-courses__card-button-2" href="#form__anchor">Записаться</a>
-        </div>
-      </div>
-
-      <div class="section-courses__card">
-        <div class="section-courses__card-header">
-          <img src="./assets/section-courses/NAVYK-PLUS-LOGO.svg" alt=""
-            class="section-courses__card-header-right-logo" />
-          <img src="./assets/section-courses/NAVYK-PLUS-ICON.svg" alt="MAIN-COURSE-ICON"
-            class="section-courses__card-header-right-icon" />
-        </div>
-        <div class="section-courses__card-description">
-          Специальный проект нашей онлайн-школы. Площадка, объединяющая
-          неравнодушных слушателей и увлечённых спикеров. Среди выступающих
-          преподаватели "НАВЫКа", профессоры ведущих университетов страны,
-          академики международного уровня и просто талантливые специалисты из
-          разных сфер. Свободный вход на фестиваль науки для всех наших
-          друзей.
-        </div>
-        <div class="section-courses__card-button-block">
-          <a class="section-courses__card-button-1" href="#form__anchor">Подробнее</a>
-          <a class="section-courses__card-button-2" href="#form__anchor">Записаться</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- section-courses end -->
-
-  <!-- section-form start -->
-  <section class="section-form">
-    <p class="section-form__title" id="form__anchor">ФОРМА ЗАЯВКИ</p>
-    <div class="section-form__wrapper">
-      <div class="section-form__block">
-        <div class="section-form__block-left">
-          <div class="section-form__block-left__slider">
-            <input type="radio" name="contactFormCustomer" id="contactFormParentButton" value="parent" checked />
-            <label for="contactFormParentButton" class="section-form__block-left-parent-button">
-              Родитель</label>
-            <input type="radio" name="contactFormCustomer" id="contactFormStudentButton" value="student" />
-            <label for="contactFormStudentButton" class="section-form__block-left-student-button">
-              Ученик</label>
-          </div>
-          <div class="section-form__block-left-inputs">
-            <input type="text" id="parentName" name="parentName" placeholder="Имя родителя"
-              class="section-form__block-left__info-line" />
-            <input type="tel" data-tel-input placeholder="Телефон родителя" maxlength="18" id="parentPhoneNumber"
-              name="parentPhoneNumber" class="section-form__block-left__info-line" />
-            <!--  -->
-            <input type="text" id="studentName" name="studentName" placeholder="Имя ученика"
-              class="section-form__block-left__info-line" />
-            <input type="tel" data-tel-input maxlength="18" id="studentPhoneNumber" name="studentPhoneNumber"
-              placeholder="Телефон ученика" class="section-form__block-left__info-line" />
-            <!--  -->
-            <input type="text" id="formComment" name="formComment" placeholder="Комментарий (необязательно)"
-              class="section-form__block-left__info-line" />
-            <select name="classNumber" id="classNumber" class="section-form__block-left__select">
-              <option value="6">6 класс</option>
-              <option value="7">7 класс</option>
-              <option value="8">8 класс</option>
-              <option value="9" selected>9 класс</option>
-              <option value="10">10 класс</option>
-              <option value="11">11 класс</option>
-            </select>
-          </div>
-          <div class="section-form__block-left__accept">
-            <label for="checkbox" class="checkbox-label">
-              <input type="checkbox" id="checkbox" class="checkbox" />
-              <span class="checkbox-view">
-                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
-                  <path fill="#fff"
-                    d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z" />
-                </svg>
-              </span>
-            </label>
-            <p class="section-form__block-left__accept-text">
-              <a href="./html-documents/processing-of-personal-data-navyk.html" target="_blank">Согласен</a>
-              на обработку персональных данных
-            </p>
-          </div>
-          <button class="section-form__block-left__button">
-            Оставить заявку
-          </button>
-        </div>
-        <div class="section-form__block-right">
-          <img src="./assets/section-form/FORM-NAVYK-ICON.svg" alt="" class="section-form__block-right-navyk-logo" />
-          <img src="./assets/section-form/FORM-DRAW-TEXT.svg" alt="" class="section-form__block-right-answer-text" />
-          <img src="./assets/section-form/FORM-CHARACTER.svg" alt="" class="section-form__block-right-phone-gay" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- section-form end -->
-  <!-- footer start -->
-  <footer class="footer">
-    <div class="footer-wrapper">
-      <div class="footer__block">
-        <p class="footer-block-title">Документы</p>
-        <ul class="footer__block-list">
-          <li class="footer__block-list-el">
-            <a href="./html-documents/privacy-policy-navyk.html" target="_blank"
-              class="footer__block-list-el-link">Политика конфендициальности</a>
-          </li>
-          <li class="footer__block-list-el">
-            <a href="./html-documents/public-offer-navyk.html" target="_blank"
-              class="footer__block-list-el-link">Публичная оферта</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__block">
-        <img src="./assets/footer/text-logo-aboba.svg" alt="" class="footer__block-logo" />
-      </div>
-      <div class="footer__block">
-        <p class="footer-block-title">Партнёры</p>
-
-        <img src="./assets/footer/prosvet-logo.svg" alt="" class="footer-block-prosvet-logo" />
-      </div>
-      <div class="footer__block">
-        <p class="footer-block-title">Контакты</p>
-        <ul class="footer__block-list">
-          <li class="footer__block-list-el">
-            <a href="#" class="footer__block-list-el-link">info@navyk.school</a>
-          </li>
-          <li class="footer__block-list-el">
-            <a href="#" class="footer__block-list-el-link">+7-985-967-67-77</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__block">
-        <p class="footer-block-title">Реквизиты</p>
-        <ul class="footer__block-list">
-          <li class="footer__block-list-el">ИП СУХОВ ВЛАДИСЛАВ СЕРГЕЕВИЧ</li>
-          <li class="footer__block-list-el">ОГРН: 323508100368822</li>
-          <li class="footer__block-list-el">ИНН: 501807943440</li>
-          <li class="footer__block-list-el">
-            141076, Московская область, г. Королёв,хл
-          </li>
-          <li class="footer__block-list-el">
-            ул. Калининградская, дом 17к2, кв. 266
-          </li>
-        </ul>
-      </div>
-      <div class="footer__block"></div>
-    </div>
-  </footer>
-  <!-- footer end -->
-
-  <!-- alert conteiner -->
-  <div class="good__attention"></div>
-</body>
-<script src="./js/script.js"></script>
-<script src="./js/teacher-carousel.js"></script>
-<script src="./js/number-validation.js"></script>
-
+  <!-- sripts start-->
+  <script src="./js/script.js"></script>
+  <script src="./js/teacher-carousel.js"></script>
+  <script src="./js/number-validation.js"></script>
+  <!-- sripts end-->
 </html>
