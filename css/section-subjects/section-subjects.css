@@ -47,6 +47,21 @@
   cursor: pointer;
 }
 
+/* Недоступные предметы - начало */
+/* (!) Для кликабельности изменить в html tabindex="1" */
+
+.section-subjects__list-el:not(:nth-child(1)) {
+  opacity: 0.3;
+  filter: saturate(0);
+}
+
+.section-subjects__list-el:not(:nth-child(1)):hover {
+  border: 1px solid #dbd5e9;
+  cursor: default;
+}
+
+/* Недоступные предметы - конец */
+
 .section-subjects__list-el:hover > .section-subjects__list-el-title {
   color: #7f68ad;
 }
