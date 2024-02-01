@@ -9,12 +9,3 @@ ___
 ### Link to BACKEND Repository:
 
 *https://github.com/waydehueydeee/navyk-backend-2024*
-
-___
-
-### CREATERS:
-**Kinjalov Alexander**  
-*https://t.me/KNJLV*  
-  
-**Nikita Syromytnikov**  
-*https://t.me/SyromyrnikovNikitaKorolev*
