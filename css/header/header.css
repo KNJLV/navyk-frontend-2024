@@ -46,11 +46,14 @@
 }
 
 .header__banner:nth-child(2) {
-  display: none;
 }
 
 .header__banner {
   border-radius: 80px;
+}
+
+.header__banner-link:nth-child(2) {
+  display: none;
 }
 
 .header__character-img {

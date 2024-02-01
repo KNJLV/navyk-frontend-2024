@@ -56,12 +56,18 @@
     text-align: center;
   }
   .header__banner:nth-child(1) {
-    display: none;
   }
   .header__banner:nth-child(2) {
-    display: inline-block;
     border-radius: 5vw;
   }
+  .header__banner-link:nth-child(1) {
+    display: none;
+  }
+
+  .header__banner-link:nth-child(2) {
+    display: inline-block;
+  }
+
   .header__wrapper-banner {
     margin: 2.75vw 0vw;
   }

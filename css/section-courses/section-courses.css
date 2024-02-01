@@ -79,18 +79,18 @@
   color: #7f68ad;
 }
 .section-courses__card-header-left-hashtag-1 {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   background-color: #f2eefa;
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-radius: 15px;
   margin-right: 10px;
 }
 .section-courses__card-header-left-hashtag-2 {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   background-color: #f2eefa;
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-radius: 15px;
 }
 .section-courses__card-description {
