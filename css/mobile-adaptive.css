@@ -219,9 +219,15 @@
   .section-supervisor__icon {
     width: 30vw;
   }
-  .section-supervisor__icon-link:nth-child(3) {
-    width: 22vw;
+  .section-supervisor__icon-link:nth-child(3) > .section-supervisor__icon {
+    width: 18vw;
   }
+  .section-supervisor__icon-link {
+    width: 90%;
+  }
+  /* .section-supervisor__icon-link:nth-child(3) {
+    width: 22vw;
+  } */
   .section-supervisor__description-block {
     width: 100%;
     min-height: 85vw;
