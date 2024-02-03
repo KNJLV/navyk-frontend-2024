@@ -217,16 +217,17 @@
     justify-content: space-evenly;
   }
   .section-supervisor__icon {
-    width: 32vw;
+    width: 30vw;
   }
   .section-supervisor__icon-link:nth-child(3) {
-    width: 20vw;
+    width: 22vw;
   }
   .section-supervisor__description-block {
     width: 100%;
-    min-height: 75vw;
+    min-height: 85vw;
     margin-left: 0vw;
     margin-top: 5vw;
+    border-radius: 8vw;
   }
   .section-supervisor__description-list-el {
     font-size: 3.5vw;
@@ -235,6 +236,10 @@
     margin-right: 2vw;
     margin-top: 2.75vw;
     margin-bottom: 2vw;
+  }
+  .section-supervisor__description-list-el::before {
+    font-size: 2.5vw;
+    margin-right: 1.5vw;
   }
   /* section-supervisor - end*/
 
@@ -306,6 +311,7 @@
     width: 125vw;
     height: 100vw;
     border-radius: 6vw;
+    margin-left: 0px;
   }
   .section-teacher__card-description-list-el {
     font-size: 3.5vw;
@@ -317,6 +323,10 @@
     padding-top: 10vw;
     font-size: 9.5vw;
     text-align: center;
+  }
+  .section-teacher__card-description-list-el::before {
+    font-size: 2.5vw;
+    margin-right: 1.5vw;
   }
   /* section-teachers - end*/
 
@@ -330,12 +340,17 @@
     flex-direction: column;
   }
   .section-courses__card {
-    padding: 3.5vw;
+    padding: 3vw;
     max-width: 90vw;
-    height: 90vw;
+    min-height: 100%;
+    height: 92vw;
     border: 0.5vw solid rgba(127, 104, 174, 0.25);
     border-radius: 7.5vw;
     margin-bottom: 7vw;
+  }
+  .section-courses__card-button-block {
+    margin-top: 0px;
+    justify-content: center;
   }
   .section-courses__card-header-left-title {
     font-size: 9vw;
@@ -518,6 +533,8 @@
   .footer__block:nth-child(2) {
     order: -1;
     width: 75vw;
+    justify-content: center;
+    align-items: center;
   }
   .footer__block:nth-child(3) {
     order: -1;
@@ -529,6 +546,12 @@
   }
   .footer__block-list-el-link {
     font-size: 4vw;
+  }
+  .footer__block-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   /* footer - end*/
 }

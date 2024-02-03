@@ -107,7 +107,8 @@
 
 .section-supervisor__description-list-el::before {
   color: #7abc60;
-  content: "◦";
+  content: "►";
+  font-size: 15px;
 }
 
 .section-supervisor__description-list-el {
