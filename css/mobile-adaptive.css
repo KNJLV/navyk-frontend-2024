@@ -55,8 +55,8 @@
     font-size: 3vw;
     text-align: center;
   }
-  .header__banner:nth-child(1) {
-  }
+  /* .header__banner:nth-child(1) {
+  } */
   .header__banner:nth-child(2) {
     border-radius: 5vw;
   }
