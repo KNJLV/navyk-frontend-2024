@@ -23,6 +23,9 @@
     max-width: 250px;
     height: 100px;
   }
+  .section-teacher__card-name-text-1 {
+    font-size: 32px;
+  }
   .section-teacher__card-name-text-2 {
     font-size: 20px;
   }
@@ -103,7 +106,7 @@
     margin-left: 10px;
   }
   .section-teacher__card-name-text-1 {
-    font-size: 36px;
+    font-size: 30px;
   }
   .section-teacher__card-name-text-2 {
     font-size: 18px;
@@ -154,7 +157,7 @@
     height: 400px;
   }
   .section-teacher__card-name-text-1 {
-    font-size: 34px;
+    font-size: 26px;
   }
   .section-teacher__card-name-text-2 {
     font-size: 16px;
