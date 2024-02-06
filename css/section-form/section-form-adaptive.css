@@ -28,7 +28,10 @@
   .section-form__block-right-answer-text {
     width: 85%;
   }
-  .section-form__block-right-phone-gay {
+  /* .section-form__block-right-phone-gay {
+    width: 85%;
+  } */
+  .section-form__block-right-socials {
     width: 85%;
   }
   .section-form__title {
@@ -59,8 +62,18 @@
   .section-form__block-right-answer-text {
     width: 95%;
   }
-  .section-form__block-right-phone-gay {
+  /* .section-form__block-right-phone-gay {
     width: 95%;
+  } */
+  .section-form__block-right-socials {
+    width: 95%;
+    height: 250px;
+  }
+  .section-form__block-right-social-link {
+    margin-left: 20px;
+  }
+  .section-form__block-right-social-icon {
+    width: 50px;
   }
   .section-form__block-left-student-button {
     width: 160px;
@@ -73,11 +86,11 @@
   }
 }
 
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
   .section-form__block-right {
     width: 400px;
   }
-}
+} */
 
 @media (max-width: 1280px) {
   .section-form__title {
@@ -135,5 +148,16 @@
   }
   .section-form__block-left__slider {
     width: 325px;
+  }
+
+  .section-form__block-right-socials {
+    width: 95%;
+    height: 225px;
+  }
+  .section-form__block-right-social-link {
+    margin-left: 15px;
+  }
+  .section-form__block-right-social-icon {
+    width: 35px;
   }
 }

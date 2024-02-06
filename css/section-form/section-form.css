@@ -259,10 +259,44 @@
 }
 .section-form__block-right-phone-gay {
   width: 90%;
-  background-image: url(../../assets/section-form/TG-ICON.svg),
+  /* background-image: url(../../assets/section-form/TG-ICON.svg),
     url(../../assets/section-form/VK-ICON.svg),
     url(../../assets/section-form/WHATSUP-ICON.svg);
   background-repeat: no-repeat;
   background-size: 50px;
-  background-position: 0% 100%, 20% 100%, 40% 100%;
+  background-position: 0% 100%, 20% 100%, 40% 100%; */
+}
+
+.section-form__block-right-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.section-form__block-right-social-link:hover {
+  filter: brightness(80%);
+  transform: scale(0.9);
+}
+
+.section-form__block-right-social-icon {
+  width: 55px;
+}
+
+.section-form__block-right-social-link:nth-child(1) {
+  margin-left: 0px;
+}
+
+.section-form__block-right-socials {
+  background-image: url(../../assets/section-form/FORM-CHARACTER.svg);
+  background-size: 100%;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: start;
 }
