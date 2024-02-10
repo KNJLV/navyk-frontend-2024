@@ -26,6 +26,9 @@
   .footer__block {
     width: 325px;
   }
+  .footer-block-prosvet-logo {
+    width: 100px;
+  }
 }
 
 @media (max-width: 1110px) {

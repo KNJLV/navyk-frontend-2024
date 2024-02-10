@@ -50,7 +50,19 @@
   width: 100%;
 }
 .footer-block-prosvet-logo {
-  width: 30%;
+  /* width: 30%; */
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-block-prosvet-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-block-prosvet-logo-link:hover {
+  filter: brightness(85%);
 }
 .footer-block__link {
   width: 100%;
