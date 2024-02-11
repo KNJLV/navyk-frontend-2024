@@ -500,7 +500,7 @@
   }
   .section-form__block-left__accept-text a {
     font-size: 4.5vw;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
   .section-form__block-left__button {
     font-size: 6vw;

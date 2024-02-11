@@ -17,7 +17,7 @@
   .section-form__block-left__accept-text {
     font-size: 18px;
     width: 80%;
-    margin-left: 25px;
+    margin-left: 52.5px;
   }
   .section-form__block {
     height: 625px;
@@ -86,6 +86,9 @@
   }
   .section-form__block-left__slider {
     max-width: 350px;
+  }
+  .section-form__block-left__accept-text {
+    margin-left: 35px;
   }
 }
 
