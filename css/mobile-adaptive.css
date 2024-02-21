@@ -360,6 +360,7 @@
     border: 0.5vw solid rgba(127, 104, 174, 0.25);
     border-radius: 7.5vw;
     margin-bottom: 7vw;
+    box-shadow: 0vw 3vw 0vw 0vw rgba(127, 104, 174, 0.2);
   }
   .section-courses__card-button-block {
     margin-top: 0px;
