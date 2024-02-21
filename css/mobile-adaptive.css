@@ -412,7 +412,7 @@
   .section-courses__card:nth-child(4) {
     border-radius: 7.5vw;
     border: 0.5vw solid rgba(122, 188, 96, 0.25);
-    box-shadow: 0vw 3vw 0vw 0vw rgba(127, 104, 174, 0.2);
+    box-shadow: 0vw 3vw 0vw 0vw rgba(122, 188, 96, 0.5);
   }
   .section-courses__title {
     margin-bottom: 5vw;
