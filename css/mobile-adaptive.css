@@ -1,6 +1,6 @@
 @media (max-width: 960px) {
   .block-shadow-and-stroke {
-    box-shadow: 0px 2.5vw 0px 0px #dbd5e9;
+    box-shadow: 0px 3vw 0px 0px #dbd5e9;
     border: 0.25vw solid #dbd5e9;
     border-radius: 6vw;
   }
@@ -159,6 +159,7 @@
     height: 30vw;
     width: 42.5vw;
     margin: 1vw;
+    margin-top: 3vw;
     box-shadow: 0vw 3vw 0vw 0vw #dbd5e9;
     border: 0.25vw solid #dbd5e9;
     border-radius: 5vw;
@@ -202,7 +203,7 @@
     width: 90vw;
     min-height: 22.5vw;
     border-radius: 7.5vw;
-    box-shadow: 0vw 2.5vw 0vw 0vw rgba(122, 188, 96, 0.5);
+    box-shadow: 0vw 3vw 0vw 0vw rgba(122, 188, 96, 0.5);
   }
   .section-supervisor__name {
     font-size: 8vw;
@@ -218,7 +219,7 @@
     border-radius: 5vw;
     flex-direction: row;
     justify-content: space-evenly;
-    box-shadow: 0vw 2.5vw 0vw 0vw rgba(122, 188, 96, 0.5);
+    box-shadow: 0vw 3vw 0vw 0vw rgba(122, 188, 96, 0.5);
   }
   .section-supervisor__icon {
     width: 30vw;
@@ -235,6 +236,7 @@
     margin-left: 0vw;
     margin-top: 5vw;
     border-radius: 8vw;
+    box-shadow: 0vw 3vw 0vw 0vw rgba(122, 188, 96, 0.5);
   }
   .section-supervisor__description-list-el {
     font-size: 3.5vw;
@@ -305,6 +307,7 @@
     width: 125vw;
     height: 22vw;
     border-radius: 6vw;
+    box-shadow: 0vw 3vw 0vw 0vw #dbd5e9;
   }
   .section-teacher__card-name-text-1 {
     font-size: 9.5vw;
@@ -320,6 +323,7 @@
     height: 100vw;
     border-radius: 6vw;
     margin-left: 0px;
+    box-shadow: 0vw 3vw 0vw 0vw #dbd5e9;
   }
   .section-teacher__card-description-list-el {
     font-size: 3.5vw;
