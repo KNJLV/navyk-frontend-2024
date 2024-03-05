@@ -19,7 +19,7 @@
 
 .header__conteiner-titles {
   /* align-self: center; */
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .header__conteiner-titles-list-el:nth-child(1) {
@@ -31,6 +31,7 @@
   font-size: 64px;
   font-weight: 800;
   color: #7f68ad;
+  margin-top: -22px;
 }
 
 .header__conteiner-titles-list-el:nth-child(3) {
@@ -45,8 +46,8 @@
   margin: 0px 60px;
 }
 
-.header__banner:nth-child(2) {
-}
+/* .header__banner:nth-child(2) {
+} */
 
 .header__banner {
   border-radius: 80px;

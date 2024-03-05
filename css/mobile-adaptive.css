@@ -50,6 +50,7 @@
   .header__conteiner-titles-list-el:nth-child(2) {
     font-size: 7vw;
     text-align: center;
+    margin-top: -3vw;
   }
   .header__conteiner-titles-list-el:nth-child(3) {
     font-size: 3vw;
@@ -148,6 +149,8 @@
   /* section-differences - end */
 
   /* section-subjects - start*/
+
+  
   .section-subjects__wrapper {
     max-width: 90vw;
   }
@@ -164,6 +167,7 @@
     border: 0.25vw solid #dbd5e9;
     border-radius: 5vw;
   }
+
   .section-subjects__list-el-icon {
     width: 20vw;
   }

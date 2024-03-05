@@ -263,3 +263,41 @@ for (let i = 0; i < courses_button.length; i++) {
     }
   });
 }
+
+//  ====================================================
+
+let subjectButtons = document.querySelectorAll(".section-subjects__list-el");
+
+let subjectIcon = document.querySelectorAll(".section-subjects__list-el-icon");
+let subjectTitle = document.querySelectorAll(
+  ".section-subjects__list-el-title"
+);
+
+// Focus и Hover для кнопок выбора предметов
+for (let i = 0; i < subjectButtons.length; i++) {
+  subjectButtons[0].classList.add("section-subjects__list-el-focus");
+  // убрать IF чтобы разблокировать предметы (!)
+  if (i < 0) {
+    subjectButtons[i].addEventListener("click", function () {
+      for (let i = 0; i < subjectButtons.length; i++) {
+        subjectButtons[i].classList.remove("section-subjects__list-el-focus");
+      }
+      subjectButtons[i].classList.add("section-subjects__list-el-focus");
+    });
+
+    subjectButtons[i].addEventListener("mouseover", function () {
+      if (
+        !subjectButtons[i].classList.contains("section-subjects__list-el-hover")
+      ) {
+        subjectButtons[i].classList.add("section-subjects__list-el-hover");
+      }
+    });
+    subjectButtons[i].addEventListener("mouseout", function () {
+      if (
+        subjectButtons[i].classList.contains("section-subjects__list-el-hover")
+      ) {
+        subjectButtons[i].classList.remove("section-subjects__list-el-hover");
+      }
+    });
+  }
+}
