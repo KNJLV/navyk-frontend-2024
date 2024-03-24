@@ -119,6 +119,7 @@
     align-self: center;
   }
   .section-differences-list-el:nth-child(1) p {
+    padding-right: 2.25vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -128,6 +129,7 @@
     padding-right: 0px;
   }
   .section-differences-list-el:nth-child(2) p {
+    padding-left: 12vw;
     width: 75%;
     /* display: flex; */
     /* justify-content: center;
@@ -136,6 +138,7 @@
     padding-right: 0px;
   }
   .section-differences-list-el:nth-child(3) p {
+    padding-right: 2.25vw;
     width: 100%;
     /* display: flex; */
     /* justify-content: center;
@@ -146,7 +149,7 @@
   .section-differences-list-el-text,
   .diff-purple-text {
     font-size: 3.75vw;
-    padding-right: 2.25vw;
+
     padding-top: 0vw;
     padding-bottom: 0vw;
   }
