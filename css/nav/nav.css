@@ -5,9 +5,10 @@
   margin: 0px 60px;
 }
 
-/* .nav{
-  border-bottom: 2px #dfd3f7 solid;
-} */
+.nav {
+  /* box-shadow: 0px 10px 0px 0px #dbd5e9; */
+  border-radius: 60px;
+}
 
 .nav__list {
   height: 65px;

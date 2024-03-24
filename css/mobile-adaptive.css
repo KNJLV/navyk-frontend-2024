@@ -60,6 +60,8 @@
   } */
   .header__banner {
     border-radius: 8vw;
+    border: 0.25vw #ddf0d6 solid;
+    box-shadow: 0vw 3vw 0vw 0vw #ddf0d6;
   }
   .header__banner-link:nth-child(1) {
     display: none;
@@ -101,7 +103,7 @@
     margin-left: 0px;
   }
   .section-differences-list-el:nth-child(1) img {
-    width: 45vw;
+    width: 40vw;
     margin: 0vw;
   }
 

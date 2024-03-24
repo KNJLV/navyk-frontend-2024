@@ -7,7 +7,7 @@
   }
 }
 
-@media (max-width: 1620px){
+@media (max-width: 1620px) {
   .header__conteiner-titles-list-el:nth-child(3) {
     font-size: 28px;
     font-weight: 600;
@@ -47,6 +47,7 @@
   }
   .header__banner {
     border-radius: 60px;
+    border: 2px #ddf0d6 solid;
   }
 }
 
