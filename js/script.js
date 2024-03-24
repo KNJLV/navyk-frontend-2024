@@ -26,9 +26,11 @@ const parentPhoneNumber = document.querySelector("#parentPhoneNumber");
 
 // я не знаю что это :D
 document.addEventListener("DOMContentLoaded", () => {
-  parentButton.checked = true;
-  studentName.style.display = "none";
-  studentPhoneNumber.style.display = "none";
+  let inputsBlock = document.querySelector(".section-form__block-left-inputs");
+  studentButton.checked = true;
+  studentName.style.display = "inline";
+  studentPhoneNumber.style.display = "inline";
+  inputsBlock.style.height = "62%";
 });
 
 // ====================================================
