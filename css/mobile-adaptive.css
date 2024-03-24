@@ -87,7 +87,7 @@
     height: 27vw;
     margin-bottom: 5vw;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
   .section-differences-list-el:nth-child(2) {
@@ -101,7 +101,7 @@
     margin-left: 0px;
   }
   .section-differences-list-el:nth-child(1) img {
-    width: 45vw;
+    width: 40vw;
     margin: 0vw;
   }
 
@@ -119,28 +119,30 @@
   .section-differences-list-el:nth-child(1) p {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     font-size: 3.75vw;
     padding-right: 0px;
   }
   .section-differences-list-el:nth-child(2) p {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 75%;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
 
     padding-right: 0px;
   }
   .section-differences-list-el:nth-child(3) p {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
 
     padding-right: 0px;
   }
-  .section-differences-list-el-text {
+  .section-differences-list-el-text,
+  .diff-purple-text {
     font-size: 3.75vw;
     padding-right: 2.25vw;
     padding-top: 0vw;
@@ -150,7 +152,6 @@
 
   /* section-subjects - start*/
 
-  
   .section-subjects__wrapper {
     max-width: 90vw;
   }

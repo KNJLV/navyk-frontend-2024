@@ -66,3 +66,10 @@
   font-size: 24px;
   padding: 25px 0px 0px 20px;
 }
+
+.diff-purple-text {
+  color: #7f68ad;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}

@@ -9,7 +9,8 @@
     width: 450px;
     height: 225px;
   }
-  .section-differences-list-el-text {
+  .section-differences-list-el-text,
+  .diff-purple-text {
     font-size: 20px;
   }
   .section-differences-list-el:nth-child(2) img {
@@ -25,7 +26,8 @@
     width: 425px;
     height: 200px;
   }
-  .section-differences-list-el-text {
+  .section-differences-list-el-text,
+  .diff-purple-text {
     font-size: 18px;
   }
 
@@ -42,7 +44,8 @@
     width: 400px;
     height: 175px;
   }
-  .section-differences-list-el-text {
+  .section-differences-list-el-text,
+  .diff-purple-text {
     font-size: 16px;
   }
 
