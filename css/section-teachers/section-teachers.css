@@ -1,3 +1,8 @@
+.section-teacher{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .section-teacher__arrow-right-icon {
   display: none;
 }
