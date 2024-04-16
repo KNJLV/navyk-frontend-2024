@@ -1,4 +1,4 @@
-.section-teacher{
+.section-teacher {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -27,6 +27,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 .section-teacher__card {
   /* margin: auto; */
