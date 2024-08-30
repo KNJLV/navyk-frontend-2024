@@ -304,7 +304,7 @@
   .section-teacher__card-left {
     max-width: 100%;
     width: 100vw;
-    height: 125vw;
+    height: 100vw;
     align-items: center;
   }
   .section-teacher__card-photo {
