@@ -4,8 +4,8 @@ ___
 
 ### Link to GitHub Pages:
 
-*https://waydehueydeee.github.io/navyk-frontend-2024/*
+*https://KNJLV.github.io/navyk-frontend-2024/*
 
 ### Link to BACKEND Repository:
 
-*https://github.com/waydehueydeee/navyk-backend-2024*
+*https://github.com/KNJLV/navyk-backend-2024*
